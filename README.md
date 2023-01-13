@@ -9,6 +9,9 @@ Interestingly, `std::map::operator[]` is non-`const`, but `std::map::at` is `con
 One interesting improvement would be using a compile-time map that we can make `constexpr`.
 The standard library's `std::map` can't be declared `constexpr`.
 
+Could also clean up the string handling a bit and do some string-splitting instead of relying on `istringstream`.
+It never feels right to use a string stream.
+
 # 20230112
 Did day 1 of Advent of Code 2022.
 It was pretty straightforward once I learned how to do I/O correctly.
