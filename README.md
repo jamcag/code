@@ -23,8 +23,9 @@ It basically was binary search except I had to refine the search interval for th
 Getting the termination condition correct was also pretty tricky but some print statements helped a lot.
 I wasn't moving the `high` pointer correctly, I mistakenly was moving it to `curr - 1` when given a bad version instead of `curr`.
 This broke the loop invariant that the first bad version is always in the interval `[low, high]` since my `high` could get too low.
-Did a bit of staring at it and brute forcing special conditions to get around it.
-Printing my variables on every loop iteration ended up being very helpful and got rid of the hacks.
+Did a bit of staring at it and brute forcing special conditions to try and get around it.
+It ended up being a distraction.
+What did end up working was printing my variables on every loop iteration.
 
 # 20230112
 Did day 1 of Advent of Code 2022.
