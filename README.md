@@ -17,6 +17,8 @@ It never feels right to use a string stream.
 Started looking at LeetCode again and am stuck on #278.
 It's a weird variation of binary search where you need to return the first occurence of an element.
 
+
+**Update**
 Got it after working through a couple of examples on paper.
 It basically was binary search except I had to refine the search interval for the first occurence.
 
