@@ -1,5 +1,5 @@
 # 20230113
-## Advent of Code
+## Advent of Code - Rock Paper Scissors Scoring
 Did day 2 of Advent of Code 2022.
 Was also pretty straightforward like yesterday's.
 
@@ -13,9 +13,12 @@ The standard library's `std::map` can't be declared `constexpr`.
 Could also clean up the string handling a bit and do some string-splitting instead of relying on `istringstream`.
 It never feels right to use a string stream.
 
-## LeetCode
+## LeetCode - First Bad Version
 Started looking at LeetCode again and am stuck on #278.
 It's a weird variation of binary search where you need to return the first occurence of an element.
+
+Got it after working through a couple of examples on paper.
+It basically was binary search except I had to refine the search interval for the first occurence.
 
 # 20230112
 Did day 1 of Advent of Code 2022.
