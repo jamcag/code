@@ -19,6 +19,7 @@ It's a weird variation of binary search where you need to return the first occur
 
 
 **Update**
+
 Got it after working through a couple of examples on paper.
 It basically was binary search except I had to refine the search interval for the first occurence.
 
