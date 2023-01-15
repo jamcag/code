@@ -7,7 +7,7 @@ In the rush to do the second part, I had a really bad bug when I was filling my 
 string s;
 set<char> char_set;
 for (int i = 0; i < char_set.size(); i++) {
-  chars.emplace(s.at(i));
+  chars_set.emplace(s.at(i));
 }
 ```
 Adding debug statements to print out the set contents after the loop made the mistake obvious. I was looking at `char_set.size()` instead of `s.size()`.
