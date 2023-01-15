@@ -2,15 +2,17 @@
 Did day 3 of Advent of Code 2022 which was also pretty straightforward.
 Learned a bit about converting chars to ints and how `static_cast<int>(A) == 65` while `static_cast<int>(a) == 97`.
 
-In the rush to do the second part, I had a really bad bug when I was filling my sets with the string contents that looked like the code below.
+In the rush to do the second part, I had a really bad bug when I was filling my sets with the string's contents.
 ```cpp
 string s;
-set<char> chars;
-for (int i = 0; i < chars.size(); i++) {
-  chars.emplace(s);
+set<char> char_set;
+for (int i = 0; i < char_set.size(); i++) {
+  chars.emplace(s.at(i));
 }
 ```
-Adding debug statements to print out the set contents after the loop made the mistake obvious.
+Adding debug statements to print out the set contents after the loop made the mistake obvious. I was looking at `char_set.size()` instead of `s.size()`.
+
+Overall, this one went pretty smooth.
 
 # 20230113
 ## Advent of Code - Rock Paper Scissors Scoring
