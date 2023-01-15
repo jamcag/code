@@ -1,6 +1,6 @@
 # 20130114
 Did day 3 of Advent of Code 2022 which was also pretty straightforward.
-Learned a bit about converting chars to ints and how `static_cast<int>(A) == 65` while `static_cast<int>(a) == 97`.
+Learned a bit about converting chars to ints and how `static_cast<int>('A') == 65` while `static_cast<int>('a') == 97`.
 
 In the rush to do the second part, I had a really bad bug when I was filling my sets with the string's contents.
 ```cpp
