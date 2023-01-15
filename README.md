@@ -12,7 +12,7 @@ for (int i = 0; i < char_set.size(); i++) {
 ```
 Adding debug statements to print out the set contents after the loop made the mistake obvious. I was looking at `char_set.size()` instead of `s.size()`.
 
-Overall, this one went pretty smooth.
+Overall, this one went pretty smooth. There's probably a nicer way to write the 3-way set intersection I did for part 2 that I can learn about.
 
 # 20230113
 ## Advent of Code - Rock Paper Scissors Scoring
