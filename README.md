@@ -5,7 +5,7 @@ The rest of the string parsing in C++ was rote.
 It was good practice for iterators though and I also learned about `std::string::substr`.
 
 I wanted to do this problem with fancier range APIs but the GCC version (9.2.0) that comes with Ubuntu 20.04 is simply too old and it will take a lot of yak shaving right now to get it working.
-Will revisit when I have a newer version of GCC.
+I would like to revisit this when I have a newer version of GCC.
 
 # 20130114
 Did day 3 of Advent of Code 2022 which was also pretty straightforward.
