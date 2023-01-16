@@ -1,3 +1,12 @@
+# 20230115
+Did day 4 of Advent of Code 2022 which was a pretty clever logic puzzle.
+Most of the fun was writing the boolean expression to check for.
+The rest of the string parsing in C++ was rote.
+It was good practice for iterators though and I also learned about `std::string::substr`.
+
+I wanted to do this problem with fancier range APIs but the GCC version (9.2.0) that comes with Ubuntu 20.04 is simply too old and it will take a lot of yak shaving right now to get it working.
+Will revisit when I have a newer version of GCC.
+
 # 20130114
 Did day 3 of Advent of Code 2022 which was also pretty straightforward.
 Learned a bit about converting chars to ints and how `static_cast<int>('A') == 65` while `static_cast<int>('a') == 97`.
@@ -47,6 +56,10 @@ This broke the loop invariant that the first bad version is always in the interv
 Did a bit of staring at it and brute forcing special conditions to try and get around it.
 It ended up being a distraction.
 What did end up working was printing my variables on every loop iteration.
+
+## C++ - Checking for Key Existence in `std::map`
+Trying to find a nice C++ equivalent for checking if a key exists in a `std::map`.
+C++20 has `std::map::contains` but getting that to compile has been problematic.
 
 # 20230112
 Did day 1 of Advent of Code 2022.
