@@ -1,4 +1,5 @@
 # 20230115
+## Advent of Code - Finding Overlapping Tasks
 Did day 4 of Advent of Code 2022 which was a pretty clever logic puzzle.
 Most of the fun was writing the boolean expression to check for.
 The rest of the string parsing in C++ was rote.
@@ -6,6 +7,14 @@ It was good practice for iterators though and I also learned about `std::string:
 
 I wanted to do this problem with fancier range APIs but the GCC version (9.2.0) that comes with Ubuntu 20.04 is simply too old and it will take a lot of yak shaving right now to get it working.
 I would like to revisit this when I have a newer version of GCC.
+
+## String Views
+Tried to redo the problem above with ranges but got stuck with converting the result of `std::views::split` into an `int`.
+Did some background reading and a `view` is a pointer to the beginning and a pointer to the end.
+The advantage of `string_view` over `string` is that it does no allocation.
+
+Still stuck but I found the string_view demo on the C++ Weekly podcast interesting.
+The compiler is better able to optimize with a string_view.
 
 # 20130114
 Did day 3 of Advent of Code 2022 which was also pretty straightforward.
