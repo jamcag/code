@@ -18,6 +18,10 @@ P
 
 The first seemed like a pain to write a parser for.
 
+## Finding Integers in Strings
+Interestingly `std::basic_string::find` when passed an `int` compiles but gives unexpected behavior.
+The `int` needs to be passed into `std::to_string` first.
+
 # 20230115
 ## Advent of Code - Finding Overlapping Tasks
 Did day 4 of Advent of Code 2022 which was a pretty clever logic puzzle.
