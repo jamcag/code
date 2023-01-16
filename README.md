@@ -1,6 +1,6 @@
 # 20230116
 Did most of day 5 of Advent of Code 2022.
-Just skipped the parsing of the stacks and manually transformed the input to be easier to read.
+Just skipped the parsing of the stacks and manually transformed the input to be easier to read into data structures.
 
 Turned
 ```
@@ -17,6 +17,10 @@ P
 ```
 
 The first seemed like a pain to write a parser for.
+
+**Update**
+Updated it to handle the parsing.
+It's a bit jank and there's probably a nicer way to read it in if I treat it as a matrix but it's not that interesting.
 
 ## Finding Integers in Strings
 Interestingly `std::basic_string::find` when passed an `int` compiles but gives unexpected behavior.
