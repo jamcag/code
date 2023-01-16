@@ -1,3 +1,23 @@
+# 20230116
+Did most of day 5 of Advent of Code 2022.
+Just skipped the parsing of the stacks and manually transformed the input to be easier to read.
+
+Turned
+```
+    [D]    
+[N] [C]    
+[Z] [M] [P]
+ 1   2   3 
+ ```
+into
+```
+ZN
+MCD
+P
+```
+
+The first seemed like a pain to write a parser for.
+
 # 20230115
 ## Advent of Code - Finding Overlapping Tasks
 Did day 4 of Advent of Code 2022 which was a pretty clever logic puzzle.
