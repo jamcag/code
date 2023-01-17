@@ -37,10 +37,10 @@ This was expected since I just wanted to move on after wrangling with compiler i
 We know some obvious optimizations though to improve both runtime and memory.
 
 We loop through `magazine` which we shouldn't need to.
-Lazily reading through `magazine` until we find a character of interest in `ransom_note`.
-Implementing this should improve the runtime.
+Lazily reading through `magazine` until we find a character of interest in `ransom_note` will improve the runtime if we find the character of interest early.
 
-We also store every character of `magazine` in a `map` which is totally unnecessary but is done for convenience.
+Our ranking on memory is bad since store every character of `magazine` in a `map`.
+This is totally unnecessary but was done for convenience.
 By doing the search for characters as we go through `ransom_note` we could totally remove the `map`.
 
 ```
