@@ -1,3 +1,12 @@
+# 20230117
+Did day 6 of Advent of Code 2022.
+Easiest one yet.
+
+Could clean it up and optimize further.
+Probably is a way to make the loops read nicer.
+I could also do a rolling update of the set of last four characters or keep track in a better way.
+It would only improve runtime by a constant factor though so not super keen on working on this further.
+
 # 20230116
 Did most of day 5 of Advent of Code 2022.
 Just skipped the parsing of the stacks and manually transformed the input to be easier to read into data structures.
@@ -63,9 +72,25 @@ Without using a map we get 75th-percentile in runtime (still not optimal since w
 ## Installing OpenCV from Source
 To use Darknet on videos, we need to make OpenCV discoverable by pkg-config. The packaged OpenCV that comes with Ubuntu doesn't seem to do this correctly so we needed to build from source.
 
-Usually we create a .deb installer instead of running `make install` but OpenCV ~~comes with an `uninstall` target which should do any cleanup we need.~~ **Update:** Doesn't seem like there's an `uninstall` target. Also, Darknet needs OpenCV 3 so we needed to reinstall. For future reference, the OpenCV 4 we installed was on `c63d79c5b16fcbbec46f1b8bb871dab2274e2b01`. 
+Usually we create a .deb installer instead of running `make install` but OpenCV ~~comes with an `uninstall` target which should do any cleanup we need.~~ **Update:** Doesn't seem like there's an `uninstall` target. ~~Also, Darknet needs OpenCV 3 so we needed to reinstall. For future reference, the OpenCV 4 we installed was on `c63d79c5b16fcbbec46f1b8bb871dab2274e2b01`. ~~ 
+**Correction:** Actually there is an `uninstall` target.
+It doesn't get rid of the `pkg-config` setup though so I can clean that up later if I install OpenCV later.
+OpenCV3 didn't work with Darknet either. and I had to apply a patch.
 
 **Sidenote:** On our PC without case fans, this brought our CPU temps to about 74°C.
+
+### Missing
+Had to apply a patch for a missing class.
+
+### Linking Failures
+
+After getting Darknet built, I still couldn't run it.
+```
+jc@jammy:~/src/tp/darknet$ ./darknet
+./darknet: error while loading shared libraries: libopencv_highgui.so.407: cannot open shared object file: No such file or directory
+```
+
+Had to write `/usr/local/lib/` into `/etc/ld.so.conf.d/opencv.conf` and run `sudo ldconfig -v`.
 
 # 20230115
 ## Advent of Code - Finding Overlapping Tasks
