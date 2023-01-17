@@ -60,6 +60,13 @@ This should be the optimal solution which is $O(m + n)$ where $m$ is the length 
 ### Ransom Note without Map
 Without using a map we get 75th-percentile in runtime (still not optimal since we restart the search from the start for each ransom note character) but jump up to 90th-percentile in memory.
 
+## Installing OpenCV from Source
+To use Darknet on videos, we need to make OpenCV discoverable by pkg-config. The packaged OpenCV that comes with Ubuntu doesn't seem to do this correctly so we needed to build from source.
+
+Usually we create a .deb installer instead of running `make install` but OpenCV ~~comes with an `uninstall` target which should do any cleanup we need.~~ **Update:** Doesn't seem like there's an `uninstall` target. Also, Darknet needs OpenCV 3 so we needed to reinstall. For future reference, the OpenCV 4 we installed was on `c63d79c5b16fcbbec46f1b8bb871dab2274e2b01`. 
+
+**Sidenote:** On our PC without case fans, this brought our CPU temps to about 74°C.
+
 # 20230115
 ## Advent of Code - Finding Overlapping Tasks
 Did day 4 of Advent of Code 2022 which was a pretty clever logic puzzle.
