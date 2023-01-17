@@ -58,7 +58,7 @@ We continue the search through `magazine` from the last position.
 This should be the optimal solution which is $O(m + n)$ where $m$ is the length of `ransom_note` and $n$ is the length of `magazine`. This is optimal because we need to go through every character of `ransom_note` to check for them in `magazine`. Worst case, magazine doesn't contain the letter and we need to compare against every character in `magazine`.
 
 ### Ransom Note without Map
-Without using a map we get 75th-percentile in runtime (still not optimal since we restart the search from the start) but jump up to 90th-percentile in memory.
+Without using a map we get 75th-percentile in runtime (still not optimal since we restart the search from the start for each ransom note character) but jump up to 90th-percentile in memory.
 
 # 20230115
 ## Advent of Code - Finding Overlapping Tasks
