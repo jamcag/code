@@ -26,6 +26,32 @@ It's a bit jank and there's probably a nicer way to read it in if I treat it as 
 Interestingly `std::basic_string::find` when passed an `int` compiles but gives unexpected behavior.
 The `int` needs to be passed into `std::to_string` first.
 
+## LeetCode - Ransom Note
+Did the Ransom Note problem  on LeetCode, here's my [solution](https://github.com/jamcag/cpplc/blob/main/ransom_note.cpp).
+First did it using `std::map::contains`, but LeetCode's compiler doesn't support it yet.
+One C++17 way to do it is to use `std::map::count(K key) -> int` which returns 1 if a key exists and 0 if it doesn't.
+
+Lots of room for improvement with our implementation at 40th percentile for runtime and 20th percentile for memory usage.
+This was expected since I just wanted to move on after wrangling with compiler issues instead of optimizing.
+
+We know some obvious optimizations though to improve both runtime and memory.
+
+We loop through `magazine` which we shouldn't need to.
+Lazily reading through `magazine` until we find a character of interest in `ransom_note`.
+Implementing this should improve the runtime.
+
+We also store every character of `magazine` in a `map` which is totally unnecessary but is done for convenience.
+By doing the search for characters as we go through `ransom_note` we could totally remove the `map`.
+
+```
+for each character c in |ransom_note|:
+  search for c in |magazine|, if we reach the end then return false
+```
+
+We continue the search through `magazine` from the last position.
+
+This should be the optimal solution which is $O(m + n)$ where m is the length of `ransom_note` and $n$ is the length of `magazine`. This is optimal because we need to go through every character of `ransom_note` to check for them in `magazine`. Worst case, magazine doesn't contain the letter and we need to compare against every character in `magazine`.
+
 # 20230115
 ## Advent of Code - Finding Overlapping Tasks
 Did day 4 of Advent of Code 2022 which was a pretty clever logic puzzle.
