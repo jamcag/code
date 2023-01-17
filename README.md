@@ -19,7 +19,7 @@ P
 The first seemed like a pain to write a parser for.
 
 **Update**
-Updated it to handle the parsing.
+Updated it to handle the parsing so now I'm done all of day 5 of Advent of Code 2022.
 It's a bit jank and there's probably a nicer way to read it in if I treat it as a matrix but it's not that interesting.
 
 ## Finding Integers in Strings
