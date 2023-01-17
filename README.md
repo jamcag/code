@@ -39,18 +39,26 @@ We know some obvious optimizations though to improve both runtime and memory.
 We loop through `magazine` which we shouldn't need to.
 Lazily reading through `magazine` until we find a character of interest in `ransom_note` will improve the runtime if we find the character of interest early.
 
-Our ranking on memory is bad since store every character of `magazine` in a `map`.
+~~Our ranking on memory is bad since store every character of `magazine` in a `map`.
 This is totally unnecessary but was done for convenience.
-By doing the search for characters as we go through `ransom_note` we could totally remove the `map`.
+By doing the search for characters as we go through `ransom_note` we could totally remove the `map`.~~
+**Correction:** This is wrong since if we want to only iterate at most once through `magazine`, we need to store letter counts.
+
 
 ```
+char_counts = {}
 for each character c in |ransom_note|:
+  check char_counts if c is available, continue if it is
   search for c in |magazine|, if we reach the end then return false
+  add chars to char_counts as we go through |magazine| if they aren't matches
 ```
 
 We continue the search through `magazine` from the last position.
 
 This should be the optimal solution which is $O(m + n)$ where m is the length of `ransom_note` and $n$ is the length of `magazine`. This is optimal because we need to go through every character of `ransom_note` to check for them in `magazine`. Worst case, magazine doesn't contain the letter and we need to compare against every character in `magazine`.
+
+### Ransom Note without Map
+Without using a map we get 75th-percentile in runtime (still not optimal since we restart the search from the start) but jump up to 90th-percentile in memory.
 
 # 20230115
 ## Advent of Code - Finding Overlapping Tasks
