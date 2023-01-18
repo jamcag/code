@@ -9,13 +9,22 @@ I could also do a rolling update of the set of last four characters or keep trac
 It would only improve runtime by a constant factor though so not super keen on working on this further.
 
 ## `bboxer` - Object Detector CLI
-Wrote a CLI tool to run a pre-trained FasterRCNN over images and draw the output. It runs pretty slow and doesn't seem to be using the GPU from what I can tell in `nvidia-smi`.
+Wrote a CLI tool [bboxer](https://github.com/jamcag/bboxer) to run a pre-trained FasterRCNN over images and draw the output. It runs pretty slow and doesn't seem to be using the GPU from what I can tell in `nvidia-smi`.
 
 This is the first step in writing a video autocropper that I want to make. On top of this, I can crop videos to the detections and start working on tracking.
 
 Synthesized this tool from some disparate PyTorch documentation. Their [tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html) on finetuning and adding a head to a pre-trained detector was very useful for instantiating and using a detector. I then built on top of it with bounding box drawing and image saving. Tied it altogether by packaging it all into a command line tool.
 
-**Thought:** The images being 4k might also explain why it's going so slow. It might be worth giving it a shot to downscale the images and see how the performance is.
+**Thought:** The images being 4K might also explain why it's going so slow. It might be worth giving it a shot to downscale the images and see how the performance is.
+
+## Trying Out `pytracking`
+Found the [`pytracking`](https://github.com/visionml/pytracking) library on Papers with Code and it seemed interesting and I wanted to try it out.
+Got stuck setting it up though.
+One of its dependencies `spatial-correlation-sampler` needs `CUDA_HOME` to be set but it's not obvious to me where that should be with my setup.
+I'd expect it to be in `/usr/local/cuda` or in `/opt` it's not there.
+Searching around for this info wasn't very helpful either.
+
+For future reference, I installed CUDA 12.0 using the official docs but also have CUDA 11.1 from the PyTorch instructions and CUDA 10.0 from the pytracking instructions.
 
 # 20230116
 Did most of day 5 of Advent of Code 2022.
