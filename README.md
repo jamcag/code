@@ -15,6 +15,8 @@ This is the first step in writing a video autocropper that I want to make. On to
 
 Synthesized this tool from some disparate PyTorch documentation. Their [tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html) on finetuning and adding a head to a pre-trained detector was very useful for instantiating and using a detector. I then built on top of it with bounding box drawing and image saving. Tied it altogether by packaging it all into a command line tool.
 
+The images being 4k might also explain why it's going so slow. It might be worth giving it a shot to downscale the images and see how the performance is.
+
 # 20230116
 Did most of day 5 of Advent of Code 2022.
 Just skipped the parsing of the stacks and manually transformed the input to be easier to read into data structures.
