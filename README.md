@@ -1,3 +1,6 @@
+# 20230118
+Just read the day 7 problem for Advent of Code 2022 and it's now ramping up in difficulty.
+
 # 20230117
 ## Advent of Code - Signal Detection
 Did day 6 of Advent of Code 2022.
