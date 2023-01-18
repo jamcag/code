@@ -1,4 +1,5 @@
 # 20230117
+## Advent of Code - Signal Detection
 Did day 6 of Advent of Code 2022.
 Easiest one yet.
 
@@ -6,6 +7,13 @@ Could clean it up and optimize further.
 Probably is a way to make the loops read nicer.
 I could also do a rolling update of the set of last four characters or keep track in a better way.
 It would only improve runtime by a constant factor though so not super keen on working on this further.
+
+## `bboxer` - Object Detector CLI
+Wrote a CLI tool to run a pre-trained FasterRCNN over images and draw the output. It runs pretty slow and doesn't seem to be using the GPU from what I can tell in `nvidia-smi`.
+
+This is the first step in writing a video autocropper that I want to make. On top of this, I can crop videos to the detections and start working on tracking.
+
+Synthesized this tool from some disparate PyTorch documentation. Their [tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html) on finetuning and adding a head to a pre-trained detector was very useful for instantiating and using a detector. I then built on top of it with bounding box drawing and image saving. Tied it altogether by packaging it all into a command line tool.
 
 # 20230116
 Did most of day 5 of Advent of Code 2022.
