@@ -9,7 +9,7 @@ I could also do a rolling update of the set of last four characters or keep trac
 It would only improve runtime by a constant factor though so not super keen on working on this further.
 
 ## `bboxer` - Object Detector CLI
-Wrote a CLI tool [bboxer](https://github.com/jamcag/bboxer) to run a pre-trained FasterRCNN over images and draw the output. It runs pretty slow and doesn't seem to be using the GPU from what I can tell in `nvidia-smi`.
+Wrote CLI tool [bboxer](https://github.com/jamcag/bboxer) to run a pre-trained FasterRCNN over images and draw the predicted bounding boxes. It runs pretty slow and doesn't seem to be using the GPU from what I can tell in `nvidia-smi`.
 
 This is the first step in writing a video autocropper that I want to make. On top of this, I can crop videos to the detections and start working on tracking.
 
@@ -26,6 +26,58 @@ Searching around for this info wasn't very helpful either.
 
 For future reference, I installed CUDA 12.0 using the official docs but also have CUDA 11.1 from the PyTorch instructions and CUDA 10.0 from the pytracking instructions.
 
+**Update:**  The `spatial-correlation-sampler` dependency is only needed for the tracker unfortunately named KYS.
+I just won't use that one.
+
+### CUDA on Ubuntu Weirdness
+ For whatever reason, to run `nvidia-smi` I had to install `nvidia-utils-525` which uninstalls  the system `nvcc` given by `nvidia-cuda-toolkit`. Maybe they conflict in some way and uninstall each other?
+```
+$ sudo apt install nvidia-utils-525
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libaccinj64-11.5 libcub-dev libcublas11 libcublaslt11 libcudart11.0 libcufft10 libcufftw10 libcupti-dev libcupti-doc libcupti11.5 libcurand10 libcusolver11 libcusolvermg11
+  libcusparse11 libegl-dev libgl-dev libgl1-mesa-dev libgles-dev libgles1 libglvnd-core-dev libglvnd-dev libglx-dev libjs-jquery libnppc11 libnppial11 libnppicc11 libnppidei11 libnppif11 libnppig11
+  libnppim11 libnppist11 libnppisu11 libnppitc11 libnpps11 libnvblas11 libnvjpeg11 libnvrtc-builtins11.5 libnvrtc11.2 libnvtoolsext1 libnvvm4 libopengl-dev libpthread-stubs0-dev libtbb-dev libtbb12
+  libtbbmalloc2 libthrust-dev libvdpau-dev libx11-dev libxau-dev libxcb1-dev libxdmcp-dev node-html5shiv nvidia-cuda-gdb nvidia-cuda-toolkit-doc nvidia-opencl-dev ocl-icd-opencl-dev opencl-c-headers
+  opencl-clhpp-headers x11proto-dev xorg-sgml-doctools xtrans-dev
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libnvidia-compute-525
+Suggested packages:
+  nvidia-driver-525
+The following packages will be REMOVED:
+  libcuinj64-11.5 libnvidia-compute-495 libnvidia-compute-510 libnvidia-ml-dev nvidia-cuda-dev nvidia-cuda-toolkit nvidia-profiler nvidia-visual-profiler
+The following NEW packages will be installed:
+  libnvidia-compute-525 nvidia-utils-525
+0 upgraded, 2 newly installed, 8 to remove and 125 not upgraded.
+Need to get 0 B/50.6 MB of archives.
+After this operation, 2,178 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+Get:1 file:/var/cuda-repo-ubuntu2204-12-0-local  libnvidia-compute-525 525.60.13-0ubuntu1 [50.2 MB]
+Get:2 file:/var/cuda-repo-ubuntu2204-12-0-local  nvidia-utils-525 525.60.13-0ubuntu1 [356 kB]
+(Reading database ... 216436 files and directories currently installed.)
+Removing nvidia-cuda-toolkit (11.5.1-1ubuntu1) ...
+Removing nvidia-cuda-dev:amd64 (11.5.1-1ubuntu1) ...
+Removing nvidia-visual-profiler (11.5.114~11.5.1-1ubuntu1) ...
+Removing nvidia-profiler (11.5.114~11.5.1-1ubuntu1) ...
+Removing libcuinj64-11.5:amd64 (11.5.114~11.5.1-1ubuntu1) ...
+Removing libnvidia-ml-dev:amd64 (11.5.50~11.5.1-1ubuntu1) ...
+Removing libnvidia-compute-495:amd64 (510.108.03-0ubuntu0.22.04.1) ...
+Removing libnvidia-compute-510:amd64 (510.108.03-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libnvidia-compute-525:amd64.
+(Reading database ... 214315 files and directories currently installed.)
+Preparing to unpack .../libnvidia-compute-525_525.60.13-0ubuntu1_amd64.deb ...
+Unpacking libnvidia-compute-525:amd64 (525.60.13-0ubuntu1) ...
+Selecting previously unselected package nvidia-utils-525.
+Preparing to unpack .../nvidia-utils-525_525.60.13-0ubuntu1_amd64.deb ...
+Unpacking nvidia-utils-525 (525.60.13-0ubuntu1) ...
+Setting up libnvidia-compute-525:amd64 (525.60.13-0ubuntu1) ...
+Setting up nvidia-utils-525 (525.60.13-0ubuntu1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+```
 # 20230116
 Did most of day 5 of Advent of Code 2022.
 Just skipped the parsing of the stacks and manually transformed the input to be easier to read into data structures.
