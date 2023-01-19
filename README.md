@@ -1,6 +1,17 @@
 # 20230119
 Day 8 seems fun with a bit of numerical thinking.
 
+**Update:** It wasn't all that numerical but got a little caught up trying to think of the boolean conditions for the first problem and the tree counting for the second problem.
+For the first problem, it took a while to write the visibility condition.
+Had to iterate on small grids to triple check my logic and walk through examples in the code comments.
+The second problem was supposed to be straightforward using the first as starter code but I wasn't incrementing right.
+
+The way I wrote my loops made it very error-prone.
+Writing this in a more functional way without loop variables would improve readability and modification.
+It was pretty dicey updating each loop for each search direction.
+I've definitely wrote code like this before and wanted to improve it but I haven't went back to them.
+This should be a good example to dip my feet into functional C++.
+
 # 20230118
 ## Advent of Code - Freeing Device Space
 Just read the day 7 problem for Advent of Code 2022 and it's now ramping up in difficulty.
