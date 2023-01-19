@@ -4,10 +4,11 @@ Just read the day 7 problem for Advent of Code 2022 and it's now ramping up in d
 **Update:** Finally finished.
 It wasn't hard but just more complex than past problems.
 Not happy with my code but I spent at least 5 hours on this already.
-
-Got a bit blocked trying to implement it all at once.
+Not 5 hours continuously.
+I procrastinated a lot when I got blocked trying to implement it all at once.
 
 Made progress faster when I started with minimal examples and incrementally added more features.
+Helped to move away from my surroundings and restart in a different room somewhere more comfortable.
 
 # 20230117
 ## Advent of Code - Signal Detection
