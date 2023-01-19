@@ -1,6 +1,10 @@
 # 20230118
 Just read the day 7 problem for Advent of Code 2022 and it's now ramping up in difficulty.
 
+**Update:** Finally finished.
+It wasn't hard but just more complex than past problems.
+Not happy with my code but I spent at least 5 hours on this already.
+
 # 20230117
 ## Advent of Code - Signal Detection
 Did day 6 of Advent of Code 2022.
