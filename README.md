@@ -1,4 +1,5 @@
 # 20230118
+## Advent of Code - Freeing Device Space
 Just read the day 7 problem for Advent of Code 2022 and it's now ramping up in difficulty.
 
 **Update:** Finally finished.
@@ -9,6 +10,11 @@ I procrastinated a lot when I got blocked trying to implement it all at once.
 
 Made progress faster when I started with minimal examples and incrementally added more features.
 Helped to move away from my surroundings and restart in a different room somewhere more comfortable.
+
+## First Render
+Left a render running last night of the detections on my video and I'm pretty happy with it.
+It's interesting to see how it loses track of me sometimes and how it's identifying holds as objects.
+Judging by the rapidly changing of border colors it appears that it flickers a lot between different object class predictions.
 
 # 20230117
 ## Advent of Code - Signal Detection
