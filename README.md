@@ -7,7 +7,7 @@ Not happy with my code but I spent at least 5 hours on this already.
 
 Got a bit blocked trying to implement it all at once.
 
-Made a lot more progress when I started with minimal examples and incrementally added more features.
+Made progress faster when I started with minimal examples and incrementally added more features.
 
 # 20230117
 ## Advent of Code - Signal Detection
