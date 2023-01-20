@@ -1,4 +1,5 @@
 # 20230119
+## Advent of Code 2022 - Tree House
 Day 8 seems fun with a bit of numerical thinking.
 
 **Update:** It wasn't all that numerical but got a little caught up trying to think of the boolean conditions for the first problem and the tree counting for the second problem.
@@ -11,6 +12,72 @@ Writing this in a more functional way without loop variables would improve reada
 It was pretty dicey updating each loop for each search direction.
 I've definitely wrote code like this before and wanted to improve it but I haven't went back to them.
 This should be a good example to dip my feet into functional C++.
+
+## Another Solution to AOC'22 Day 1
+Inspired by a day of cooking, I'm deciding look at other people's solutions after I do problems starting with one for the Calorie Counting problem.
+Story is that I didn't code at all after solving the problem and spent most of my free time today learning to cook a new dish.
+After I finished, I ended up watching other variations of the recipe and learned a lot from seeing different variations.
+There's YouTube videos of people presenting their solutions and I found a good one from Kjell.
+
+### Staged Processing
+Kjell's solution processed data in stages.
+I opted to avoid storing intermediate data structures and did the work as I was reading from standard input.
+This gave a pretty simple solution for a pretty simple problem.
+Kjell decomposed his into stages:
+
+1. Read data into `vector<string>` of lines.
+2. Process into a `vector<vector<int>>` of the calories for each elf.
+3. Use `std::accumulate` to sum up calories for each elf and `std::max_element` to find the maximum.
+
+I had thought of doing it in stages too but it seemed overkill for this problem.
+I think it would be good as an exercise to do it this way too though.
+
+**Aside:** My yak shaving tendencies made me start thinking of the best way to present different solutios in a git repository.
+The options are (1) side-by-side files, (2) different branch for different solution, (3) just simply overwriting the original file on `main`.
+While I think (1) and (2) have benefits, I think it is definitely overkill and the benefit would be marginal.
+I'll just code and push.
+
+### Structural Differences
+I found their code structure interesting.
+They had one file for both problems and his executable would run on both the example inputs and real inputs for both days outputting in the form
+```
+[Part 1 Example]: ...
+[Part 1 Real]: ...
+[Part 2 Example]: ...
+[Part 2 Real]: ...
+```
+Pretty spiffy in my opinion but it also leads to bigger files but avoids needing to copy paste duplication.
+The classic trade-offs between making a library function vs. copy-pasting likely also apply.
+
+Additionally, I noticed they also used a different namespace for the "runners" for the different days.
+It roughly looked like
+```cpp
+namespace part1 {
+  void run(char* input_file) {...}
+}
+
+namespace part2 {
+  void run(char* input_file) {...}
+}
+```
+
+Their main function then looked like
+```cpp
+int main() {
+  part1::run("example");
+  part1::run("test");
+  part2::run("example");
+  part2::run("input");
+}
+```
+This template seems pretty handy for someone trying to do the problems as fast as possible for the leaderboards.
+Definitely made me pause and think what optimizations do my workflow I could do.
+Optimizations that would actually save me time that is.
+
+**Conclusion:** Overall, I learned a lot seeing what someone else produced.
+His presentation walked through the code.
+It will be interesting to see someone live coding their solution to see their thought process.
+It should be just like interviewing someone.
 
 # 20230118
 ## Advent of Code - Freeing Device Space
