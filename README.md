@@ -7,6 +7,11 @@ That was pretty fun.
 Learned about `std::vector::back` recently which has replaced my usage of `vec[vec.size() - 1]`.
 Way nicer.
 
+Also made a [`std::accumulate` example of how to take the row-wise sum, column-wise sum, and total sum of a 2d vector](https://github.com/jamcag/cppex/blob/fcc92b0682a8be9657c9d014b3ba53db50d17d9e/accumulate.cpp#L21-L45).
+The column-wise one isn't super nice.
+I'm hoping to find a better way of writing it.
+I see there's some utilities to flatten an array into views and maybe there's some way to make the iterator skip across elements the correct way to go down a column.
+
 # 20230119
 ## Advent of Code 2022 - Tree House
 Day 8 seems fun with a bit of numerical thinking.
