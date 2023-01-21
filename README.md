@@ -1,6 +1,9 @@
 # 20230120
 Very wordy description for AOC '22 day 9.
 
+**Update:** Now done.
+That was pretty fun.
+
 # 20230119
 ## Advent of Code 2022 - Tree House
 Day 8 seems fun with a bit of numerical thinking.
