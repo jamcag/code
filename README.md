@@ -4,6 +4,9 @@ Very wordy description for AOC '22 day 9.
 **Update:** Now done.
 That was pretty fun.
 
+Learned about `std::vector::back` recently which has replaced my usage of `vec[vec.size() - 1]`.
+Way nicer.
+
 # 20230119
 ## Advent of Code 2022 - Tree House
 Day 8 seems fun with a bit of numerical thinking.
