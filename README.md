@@ -44,6 +44,12 @@ I think I gave it a solid effort trying to use a modulo trick,  then trying to i
 
 I have a feeling the underlying number theory will be nagging at me now but I'll deal with it.
 
+# 20230121
+**Laterblog (from 20230122):** Yesterday, I did AoC '22 day 10 part 1 pretty fast then procrastinated on the second part since I thought it would be hard.
+Once I sat down to do it and full sent the coding, it was really quick to do though.
+
+I enjoyed the ASCII art.
+
 # 20230120
 Very wordy description for AOC '22 day 9.
 
