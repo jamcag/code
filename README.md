@@ -5,7 +5,7 @@ I tried upping my `int`s to `int64_t` and even `__int128` which gcc supports but
 My next idea is to implement my own integer class with addition, multiplication, and modulo operators.
 
 **Update:** While perusing JavaScript's docs on their `BigInt` values I got the idea to see if using `double`s would work and it did up to 20 rounds.
-I was started to get `inf`s when I upped the number of rounds to 1000 though.
+I started to get `inf`s when I upped the number of rounds to 1000 though.
 Even at 1000 rounds, I was getting numbers with 100-200 digits.
 I'm unsure if implementing big integers myself will work when the number of digits get even higher at 10000 rounds.
 
