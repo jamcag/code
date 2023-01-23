@@ -1,3 +1,8 @@
+# 20230122
+Did part 1 of AoC '22 day 11 relatively quickly.
+Part 2 is tricky with dealing with integer overflow though.
+I tried upping my `int`s to `int64_t` and even `__int128` which gcc supports but was still getting overflow.
+
 # 20230120
 Very wordy description for AOC '22 day 9.
 
