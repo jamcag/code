@@ -30,6 +30,19 @@ It is now slowing to a crawl however when it reaches ~round 1000.
 The fact that it's taking at least five minutes and is still in the 1000s suggests there's a more clever way of solving this one.
 Maybe there's some way to truncate the numbers in a smart way that allows us to pass it through operations while preserving divisilibty checks.
 
+**Update 4:** Had to read a [hint on reddit](https://www.reddit.com/r/adventofcode/comments/zih7gf/2022_day_11_part_2_what_does_it_mean_find_another/).
+Pretty disappointed that I couldn't figure out myself.
+Not sure I quite understand why it works either, though my gut was telling me it had something to do with this.
+
+I previously tried truncating to $n$ digits (for various values of $n$) but would be off.
+Intuitively, checking the last couple digits for divisibilty should be enough and I don't think it should affect addition and multiplication for those last few digits but it does.
+
+I tried working it for about two hours (across maybe 12 hours on and off).
+Maybe I could have eventually figured it out myself but it is getting late and I wanted to move on.
+I could have just left it unsolved but it would have bothered me.
+I think I gave it a solid effort trying to use a modulo trick,  then trying to implement big integers, then integrating GMP to see it fail but I just didn't know enough number theory.
+
+I have a feeling the underlying number theory will be nagging at me now but I'll deal with it.
 
 # 20230120
 Very wordy description for AOC '22 day 9.
