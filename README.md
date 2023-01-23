@@ -24,7 +24,12 @@ doesn't.
 **Update 2:** GMP implements arbitrarily big integers in C++ with the `mpz_class` data type.
 Doing the quick and fast replacements to use this type is giving me a segfault when it calls the lambda.
 
-**Update 3:** Removing the lambda and replacing it with `operator()` instead got around the segfault. It is now slowing to a crawl however when it reaches ~round 1000.
+**Update 3:** Removing the lambda and replacing it with `operator()` instead got around the segfault.
+It is now slowing to a crawl however when it reaches ~round 1000.
+
+The fact that it's taking at least five minutes and is still in the 1000s suggests there's a more clever way of solving this one.
+Maybe there's some way to truncate the numbers in a smart way that allows us to pass it through operations while preserving divisilibty checks.
+
 
 # 20230120
 Very wordy description for AOC '22 day 9.
