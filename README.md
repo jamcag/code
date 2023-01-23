@@ -21,6 +21,11 @@ g++ -g -lgmp -lgmpxx gorilla_business.cpp -o gorilla_business
 ```
 doesn't.
 
+**Update 2:** GMP implements arbitrarily big integers in C++ with the `mpz_class` data type.
+Doing the quick and fast replacements to use this type is giving me a segfault when it calls the lambda.
+
+**Update 3:** Removing the lambda and replacing it with `operator()` instead got around the segfault. It is now slowing to a crawl however when it reaches ~round 1000.
+
 # 20230120
 Very wordy description for AOC '22 day 9.
 
