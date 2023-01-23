@@ -2,6 +2,24 @@
 Did part 1 of AoC '22 day 11 relatively quickly.
 Part 2 is tricky with dealing with integer overflow though.
 I tried upping my `int`s to `int64_t` and even `__int128` which gcc supports but was still getting overflow.
+My next idea is to implement my own integer class with addition, multiplication, and modulo operators.
+
+**Update:** While perusing JavaScript's docs on their `BigInt` values I got the idea to see if using `double`s would work and it did up to 20 rounds.
+I was started to get `inf`s when I upped the number of rounds to 1000 though.
+Even at 1000 rounds, I was getting numbers with 100-200 digits.
+I'm unsure if implementing big integers myself will work when the number of digits get even higher at 10000 rounds.
+
+Trying out the GMP library.
+Interestingly, I need to compile with `-l` flags at the end.
+
+```
+g++ -g gorilla_business.cpp -o gorilla_business -lgmp -lgmpxx
+```
+works but
+```
+g++ -g -lgmp -lgmpxx gorilla_business.cpp -o gorilla_business
+```
+doesn't.
 
 # 20230120
 Very wordy description for AOC '22 day 9.
