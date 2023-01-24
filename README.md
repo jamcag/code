@@ -1,3 +1,10 @@
+# 20230123
+I gave day 12 of AoC '22 a solid shot but am stumped.
+It was super easy to get it working with the example input but the search tree is too big when doing it on the real input.
+
+Tried crafting a couple of heuristics to do A* with instead of BFS but it is still getting stuck.
+
+I might also have bugs somewhere but it is now very late.
 # 20230122
 Did part 1 of AoC '22 day 11 relatively quickly.
 Part 2 is tricky with dealing with integer overflow though.
