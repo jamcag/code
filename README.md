@@ -5,6 +5,13 @@ It was super easy to get it working with the example input but the search tree i
 Tried crafting a couple of heuristics to do A* with instead of BFS but it is still getting stuck.
 
 I might also have bugs somewhere but it is now very late.
+
+Disappointed that my streak of Advent of Code solving is ending.
+Did way too much today anticipating that this would be easy after glancing at the problem.
+Also had very short sleep the last night.
+
+Oh well.
+
 # 20230122
 Did part 1 of AoC '22 day 11 relatively quickly.
 Part 2 is tricky with dealing with integer overflow though.
