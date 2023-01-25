@@ -1,3 +1,34 @@
+# 20230125
+Finally solved AoC '22 day 12 part 1.
+The problems I had were:
+- movement did not allow for arbitrarily high descents (These elves need climbing gear to climb two levels but apparently don't take fall damage falling from massive heights.)
+- the cost function I was using in the priority queue was non-admissible
+  - solved this by doing standard A* with Manhattan distance
+- my "visited" set accounted for paths and not cells
+  - it was very peculiar why it was looping for so long with so few grid cells
+  - on initial implementation, I was worried that a cell $c$ might get expanded early and the $S-c$ path would be suboptimal
+  - by using the standard "current length + cost-to-go" heuristic for A*, the $S-c$ path is guaranteed to be optimal.
+
+Also did the quick (to-implement) solution for part 2 instead of the faster (to-run).
+
+Also saw some weirdness where I could enqueue a `char` into a `std::set<std::array<int, 2>>`.
+There's possibly an off-by-one in my part 2 solution, or I just got lucky.
+
+Anyways, glad to have got that out of the way.
+
+I learned a lot about priority queuing
+- The default `std::priority_queue` behaviour is a min-queue using the `std::less<T>` comparator
+- That can be reversed by passing `std::greater<T>` as a comparator
+- A custom comparator can be defined as `[](T lhs, T rhs) -> bool`
+- To make a priority queue with a custom data type, first make a comparison function (e.g. `cmp`) then do `std::priority_queue<T, std::vector<T>, decltype(cmp) pq(cmp)`
+
+Also got some more exposure to other standard library things
+- `std::min` is a binary operation
+- To find the minimum of a sequence use `std::min_element`
+  - This returns an iterator that must be dereferenced to get the actual minimum value
+- Using type aliases when I started nesting a bunch of containers was really helpful
+  - At one point I think I wrote out `std::priority_queue<std::vector<std::array<int, 2>>, std::vector<std::vector<std::array<int, 2>>>, decltype(l1_dist)>` as type...
+
 # 20230124
 I picked AoC '22 day 12 back up again but still haven't solved it.
 Tried
