@@ -28,6 +28,14 @@ The most popular library for this is ncurses but it's API is CLUNKY.
 It got me thinking about a simple app that you could paste formatted text into and would let you play it back.
 Would be nice.
 
+**Update:** Made the a quick and dirty [text frame app](https://github.com/jamcag/imgui/blob/3229ef55cda0960d9ed2520fcc93b1228de91e70/examples/example_glfw_opengl3/main.cpp).
+It takes newline separated frames in a file called `input` and it lets you scroll through the frames.
+The round trip of saving the text output, updating the input file, and relaunching the app is pretty involved though so I'm not sure how much mileage this will get.
+
+Features that would be nice:
+- Stream output from a running program
+- Play the text automatically
+
 # 20230123
 I gave day 12 of AoC '22 a solid shot but am stumped.
 It was super easy to get it working with the example input but the search tree is too big when doing it on the real input.
