@@ -67,6 +67,9 @@ Features that would be nice:
 - Stream output from a running program
 - Play the text automatically
 
+**Update 2 (20230125):** Opening the file up in vim and holding `]` achieves most of what I want.
+The FPS is pretty low but is enough for intuition.
+
 # 20230123
 I gave day 12 of AoC '22 a solid shot but am stumped.
 It was super easy to get it working with the example input but the search tree is too big when doing it on the real input.
