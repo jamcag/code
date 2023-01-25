@@ -1,3 +1,33 @@
+# 20230124
+I picked AoC '22 day 12 back up again but still haven't solved it.
+Tried
+- Updating the priority queue function to account for Manhattan distance to the `E`
+  - It expanded fewer nodes on the example input but was still getting stuck at the end.
+- Changing the "visited" set to track cells instead of paths
+  - Also lead to faster chugging through small input but still got stuck.
+
+
+The failure case is when it gets stuck in a big valley of flatness.
+
+```
+cccccccccccccccccccccccccccccccccccccc
+SbcccccccccccccdefghijklmnopqrstuvwxyE
+cccccccccccccccccccccccccccccccccccccc
+```
+
+Here, once it reaches a 'c', it starts expanding a bunch.
+
+## Hill Climbing Visualization Aside
+Went down a couple rabbit holes trying to visualize my pathfinding state.
+Had a couple of false starts with ImGui and React.
+ImGui is really verbose while React would mean translating my solution into JS/TS.
+
+Ideally since I already am outputting a visualization to the terminal, there should be a library that lets you clear and update text in place instead of dumping extra lines.
+The most popular library for this is ncurses but it's API is CLUNKY.
+
+It got me thinking about a simple app that you could paste formatted text into and would let you play it back.
+Would be nice.
+
 # 20230123
 I gave day 12 of AoC '22 a solid shot but am stumped.
 It was super easy to get it working with the example input but the search tree is too big when doing it on the real input.
