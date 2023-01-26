@@ -1,4 +1,5 @@
 # 20230125
+## Advent of Code - Hill Climbing
 Finally solved AoC '22 day 12 part 1.
 The problems I had were:
 - movement did not allow for arbitrarily high descents (These elves need climbing gear to climb two levels but apparently don't take fall damage falling from massive heights.)
