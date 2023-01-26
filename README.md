@@ -29,6 +29,14 @@ Also got some more exposure to other standard library things
 - Using type aliases when I started nesting a bunch of containers was really helpful
   - At one point I think I wrote out `std::priority_queue<std::vector<std::array<int, 2>>, std::vector<std::vector<std::array<int, 2>>>, decltype(l1_dist)>` as type...
 
+## `tviz` - Text Visualizer
+Pulled the app out from my imgui fork into its own [separate repo](https://github.com/jamcag/tviz).
+Not sure if I will ever pick it up again but ImGui seems pretty handy for quick GUIs.
+I'm still not sure how it interacts with the different backends and which would be best though.
+Maybe I can just skip ImGui altogether and use bare GLFW (or one of those other backends it supports).
+
+Not the most interesting project so no concrete plans for this one.
+
 # 20230124
 I picked AoC '22 day 12 back up again but still haven't solved it.
 Tried
