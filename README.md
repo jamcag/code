@@ -25,7 +25,7 @@ Also had to use `std::tuple` today to return multiple values and it's not as nic
 While it does kind of work in C++, static typing and const make it not as nice to use since you need to stack multiple underscores when the type changes or if a previously defined one is `const`.
 
 ## Multithreading Hello World
-Read the first chapter of C++ Concurrency in Action and it ended with a cool example of how to use C++ threads.
+Read the first chapter of C++ Concurrency in Action and it ended with a [cool example](https://github.com/jamcag/cppex/blob/main/thread_hello.cpp) of how to use C++ threads.
 Would be nice to go through the book but I'm not sure I have a problem that will motivate reading it at the moment.
 
 # 20230125
