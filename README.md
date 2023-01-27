@@ -1,3 +1,25 @@
+# 20230126
+## Advent of Code 2022 Day 13 - Distress Signal
+Did day 13.
+It was a good progression from part 1 to part 2 but damn that was annoying to read in the input in C++.
+
+I ended up asking ChatGPT for the input reader, and the code it gave didn't even work but it did help me thing of a nice way to parse things like `[1, [2], [[3]], 10]` by incrementally building up digits and then calling `std::stoi` on them.
+It alternatively suggests using a JSON library which would have worked nicely too but I'm trying to stay dependency free for these.
+
+I worked with `std::any` a lot for this one and I don't like how it ends up looking.
+Lots of ugly `try`/`catch` blocks and weird operator overloading.
+
+Also ran into a problem calling `std::find` inside my `std::vector<std::any>` for the divider packets. I tried defining my own `operator==(const std::any&, const std::any&)` but the compiler complained.
+
+Anyways, glad to have got that out of the way. I liked how the first part was basically verifying your comparator function which you would then use to sort for the second part.
+
+It should be interesting to see others' C++ solutions for this cause boymine is UGLY.
+
+## Terminal Navigation in VSCode
+Shout out to Ctrl+Up and Ctrl+Down in VSCode's terminal.
+It makes it way nicer to find compilation errors.
+I used to scroll which was time consuming, or search for my terminal's "enter a command" marker which was tedious especially when I don't have an easy to type ASCII magic marker set up on whatever shell I'm using.
+
 # 20230125
 ## Advent of Code 2022 - Hill Climbing
 Finally solved AoC '22 day 12 part 1.
