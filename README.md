@@ -13,7 +13,7 @@ Also ran into a problem calling `std::find` inside my `std::vector<std::any>` fo
 
 Anyways, glad to have got that out of the way. I liked how the first part was basically verifying your comparator function which you would then use to sort for the second part.
 
-It should be interesting to see others' C++ solutions for this cause boymine is UGLY.
+It should be interesting to see others' C++ solutions for this cause boy mine is UGLY.
 
 ## Terminal Navigation in VSCode
 Shout out to Ctrl+Up and Ctrl+Down in VSCode's terminal.
