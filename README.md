@@ -24,6 +24,10 @@ I used to scroll which was time consuming, or search for my terminal's "enter a 
 Also had to use `std::tuple` today to return multiple values and it's not as nice as in Python because of the lack of something like Python's convention to use `_` for throwaway placeholders.
 While it does kind of work in C++, static typing and const make it not as nice to use since you need to stack multiple underscores when the type changes or if a previously defined one is `const`.
 
+## Multithreading Hello World
+Read the first chapter of C++ Concurrency in Action and it ended with a cool example of how to use C++ threads.
+Would be nice to go through the book but I'm not sure I have a problem that will motivate reading it at the moment.
+
 # 20230125
 ## Advent of Code 2022 - Hill Climbing
 Finally solved AoC '22 day 12 part 1.
