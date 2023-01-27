@@ -20,6 +20,10 @@ Shout out to Ctrl+Up and Ctrl+Down in VSCode's terminal.
 It makes it way nicer to find compilation errors.
 I used to scroll which was time consuming, or search for my terminal's "enter a command" marker which was tedious especially when I don't have an easy to type ASCII magic marker set up on whatever shell I'm using.
 
+## Aside: Lack of Placeholder Variable in C++
+Also had to use `std::tuple` today to return multiple values and it's not as nice as in Python because of the lack of something like Python's convention to use `_` for throwaway placeholders.
+While it does kind of work in C++, static typing and const make it not as nice to use since you need to stack multiple underscores when the type changes or if a previously defined one is `const`.
+
 # 20230125
 ## Advent of Code 2022 - Hill Climbing
 Finally solved AoC '22 day 12 part 1.
