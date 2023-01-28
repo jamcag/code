@@ -235,7 +235,7 @@ Kjell decomposed his into stages:
 I had thought of doing it in stages too but it seemed overkill for this problem.
 I think it would be good as an exercise to do it this way too though.
 
-**Aside:** My yak shaving tendencies made me start thinking of the best way to present different solutios in a git repository.
+**Aside:** My yak shaving tendencies made me start thinking of the best way to present different solutions in a git repository.
 The options are (1) side-by-side files, (2) different branch for different solution, (3) just simply overwriting the original file on `main`.
 While I think (1) and (2) have benefits, I think it is definitely overkill and the benefit would be marginal.
 I'll just code and push.
