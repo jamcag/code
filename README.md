@@ -16,7 +16,7 @@ It was a good progression from part 1 to part 2 but damn that was annoying to re
 I ended up asking ChatGPT for the input reader, and the code it gave didn't even work but it did help me thing of a nice way to parse things like `[1, [2], [[3]], 10]` by incrementally building up digits and then calling `std::stoi` on them.
 It alternatively suggests using a JSON library which would have worked nicely too but I'm trying to stay dependency free for these.
 
-I worked with `std::any` a lot for this one and I don't like how it ends up looking.
+I worked with `std::any` a lot for this one and I didn't like how it ended up looking.
 Lots of ugly `try`/`catch` blocks and weird operator overloading.
 
 Also ran into a problem calling `std::find` inside my `std::vector<std::any>` for the divider packets. I tried defining my own `operator==(const std::any&, const std::any&)` but the compiler complained.
