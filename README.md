@@ -80,6 +80,34 @@ Maybe I can just skip ImGui altogether and use bare GLFW (or one of those other 
 
 Not the most interesting project so no concrete plans for this one.
 
+
+## LeetCode - Number of Steps
+(Laterblog 20230127)
+
+This one seemed like a variation of rope cutting that's used to introduce dynamic programming.
+First did a naive solution recursion-only (no DP) solution which I thought would work.
+It worked on the simple test cases of $n=2$ and $n=3$ but failed for $n=4$ which should have five ways.
+Then relented and did a DP solution.
+
+To refresh, I coded up a quick Fibonacci calculator which was pretty straightforward.
+Then just tried out `return num_steps(n - 2) + num_steps(n - 1)` in my solution and it somehow worked.
+I was expecting some constant (either 1 or 2) to be added too but just doing the recursive calls seemed to be enough to pass the test cases.
+
+Performance was pretty bad with 30% in runtime and memory usage too but haven't given it more thought.
+
+## LeetCode - Longest Palindrome
+(Laterblog 20230127)
+
+Was initially stumped on this one trying to think of how to calculate palindromes but I think the easy peasy method should be good enough.
+Basically, for every substring $s_i:s_n$ of the string $s$ you check if $s_i:s_j$ is a palindrome and find the largest $j$ which is.
+This gives you all the possible palindromes and then it's just a simple max.
+
+Ran into some errors coding it up but haven't went back to it since.
+Not sure what the optimal solution is yet either.
+
+We'll pick it back up.
+I think once we're done Advent of Code 2022 we can start looking at LeetCode problems more systematically.
+
 # 20230124
 I picked AoC '22 day 12 back up again but still haven't solved it.
 Tried
