@@ -1,3 +1,13 @@
+# 20230127
+Poor sleep and didn't get to do much coding today apart from reading input for AoC '22 day 14.
+Tried to do the problem in a fancy way with `std::views::pairwise` but thought I needed to do it on a specific machine with a recent enough compiler so took a long break.
+Turns out that even my box with Ubuntu 22.04 doesn't have a g++/libstdc++ that's recent enough to support it.
+
+Could have ran a newer one in Docker but right now I have an aversion to doing sysadmin stuff like that so if I see a language feature I don't see supported again, I'll just solve the problem with whatever is actually available.
+
+Halfway through last year's Advent of Code though which is I think the furthest I've ever gotten!
+Hopefully I can finish this one up!
+
 # 20230126
 ## Advent of Code 2022 Day 13 - Distress Signal
 Did day 13.
