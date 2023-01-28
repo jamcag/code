@@ -55,7 +55,7 @@ The problems I had were:
 Also did the quick (to-implement) solution for part 2 instead of the faster (to-run).
 
 Also saw some weirdness where I could enqueue a `char` into a `std::set<std::array<int, 2>>`.
-There's possibly an off-by-one in my part 2 solution, or I just got lucky.
+Also, there's possibly an off-by-one in my part 2 solution, or I just got lucky.
 
 Anyways, glad to have got that out of the way.
 
