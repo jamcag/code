@@ -8,6 +8,8 @@ Could have ran a newer one in Docker but right now I have an aversion to doing s
 Halfway through last year's Advent of Code though which is I think the furthest I've ever gotten!
 Hopefully I can finish this one up!
 
+Momentum is a thing so let's try to get the cadence back to daily solutions.
+
 # 20230126
 ## Advent of Code 2022 Day 13 - Distress Signal
 Did day 13.
