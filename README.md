@@ -22,7 +22,7 @@ Doing this with CMake-built projects is pretty easy as you just define the `CMAK
 
 Adding `/opt/protobuf` and `/opt/grpc` to `CMAKE_PREFIX_PATH` then lets my project succeed with the `find_package` calls.
 
-I still don't have it set up to build and link `.proto` files automatically but I can probably just avoid it and pre-build it for now as the data and RPC calls likely won't change too much given the simplicity of the application.
+I still don't have it set up to build and link `.proto` files automatically but I can probably avoid it and pre-build it and check the outputs in for now as the data and RPC calls likely won't change too much given the simplicity of the application.
 
 # 20230127
 Poor sleep and didn't get to do much coding today apart from reading input for AoC '22 day 14.
