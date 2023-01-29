@@ -6,6 +6,9 @@ To make search faster, I tried moving from a `vector` ($O(n)$) to a `set`($O(\lo
 
 For the final settled shape of part 2, we'll likely end up with a triangle but will need to subtract off any unreachable cells.
 
+**Update:** Re-running it with `-O3` optimization and it caught up to whatever optimization level CLion was running at in about 3 minutes.
+The CLion one was 30 minutes into running.
+It's still really slow but it would be interesting to understand what optimization did to make it so much faster (10x!).
 
 # 20230127
 Poor sleep and didn't get to do much coding today apart from reading input for AoC '22 day 14.
