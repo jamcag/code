@@ -2,7 +2,7 @@
 Did part 1 after much handwringing.
 My part 2 solution is very slow.
 The approach is likely very different.
-To make search faster, I tried moving from a `vector` ($O(n)$) to a `set`($O(\log n)$) to an `unordered_set` ($O(1)$) but it still is taking longer than five minutes to complete.
+To make search faster, I tried moving from a `vector` ($O(n)$) to a `set`($O(\log n)$) to an `unordered_set` ( $O(1)$ ) but it still is taking longer than five minutes to complete.
 
 For the final settled shape of part 2, we'll likely end up with a triangle but will need to subtract off any unreachable cells.
 
