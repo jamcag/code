@@ -12,6 +12,16 @@ It's still really slow but it would be interesting to understand what optimizati
 
 **Update 2:** It finished under 5 minutes (4m37s to be exact) so I'll take it and go.
 
+**Update 3:** I watched someone else's solution and they adapted their part 1 solution pretty directly so I think it should still be the same approach.
+Their code was pretty hard to grok though so I didn't get into the details of how they solved it.
+
+## Qt and gRPC Setup
+I think I want to do `tviz` inside of Qt instead and add networking so that the text source doesn't have to run in the same process.
+I initially set up my CMake project to download gRPC using CMake but it was taking about 10 minutes to run `cmake ..` mostly on just cloning the `grpc` repo and its submodules so I instead just built it before hand and installed gRPC and Protobuf into `opt`.
+Doing this with CMake-built projects is pretty easy as you just define the `CMAKE_INSTALL_PREFIX` flag when configuring the build environment.
+
+Adding `/opt/protobuf` and `/opt/grpc` to `CMAKE_PREFIX_PATH` then lets my project succeed with the `find_package` calls.
+
 # 20230127
 Poor sleep and didn't get to do much coding today apart from reading input for AoC '22 day 14.
 Tried to do the problem in a fancy way with `std::views::pairwise` but thought I needed to do it on a specific machine with a recent enough compiler so took a long break.
