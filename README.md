@@ -1,3 +1,12 @@
+# 20230128
+Did part 1 after much handwringing.
+My part 2 solution is very slow.
+The approach is likely very different.
+To make search faster, I tried moving from a `vector` ($O(n)$) to a `set`($O(\log n)$) to an `unordered_set` ($O(1)$) but it still is taking longer than five minutes to complete.
+
+For the final settled shape of part 2, we'll likely end up with a triangle but will need to subtract off any unreachable cells.
+
+
 # 20230127
 Poor sleep and didn't get to do much coding today apart from reading input for AoC '22 day 14.
 Tried to do the problem in a fancy way with `std::views::pairwise` but thought I needed to do it on a specific machine with a recent enough compiler so took a long break.
