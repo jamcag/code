@@ -10,6 +10,8 @@ For the final settled shape of part 2, we'll likely end up with a triangle but w
 The CLion one was 30 minutes into running.
 It's still really slow but it would be interesting to understand what optimization did to make it so much faster (10x!).
 
+**Update 2:** It finished under 5 minutes (4m37s to be exact) so I'll take it and go.
+
 # 20230127
 Poor sleep and didn't get to do much coding today apart from reading input for AoC '22 day 14.
 Tried to do the problem in a fancy way with `std::views::pairwise` but thought I needed to do it on a specific machine with a recent enough compiler so took a long break.
