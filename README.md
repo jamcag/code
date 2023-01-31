@@ -18,6 +18,7 @@ Got the solution on a walk that we don't need to check all the possible squares,
 This reduces our search space to about 0.1% of the cells.
 
 # 20230129
+## Advent of Code 2022 - Sensors and Beacons
 Did day 15 part 1.
 
 Turns out `std::find(container.begin(), container.end(), elem)` is not equivalent to `container.find(elem)`.
@@ -27,6 +28,26 @@ My falling sand solution taking just under 5 minutes also uses the slow way, swi
 
 Also, emplacing into a `vector` made my code a lot faster than when I was putting it into a `set`.
 My solution was not finishing under 5 minutes when I was using a set but did just fine with a vector.
+
+## Fast AI 2022 Lecture 1
+Went through the whole lecture of Fast AI 2022, I think I watched parts of it before.
+He opens up with an example of training a bird detector, goes into a segue into teaching philosophy, and then does it again in more detail.
+After that, we looked at doing other tasks such as segmentation and tabular learning.
+Homework is to read the first chapter of the book and think of a cool project.
+
+The library itself seems pretty straightforward and powerful.
+The key concept is a `DataBlock` where you specify the input and output types, any transforms, how to randomly split data, and give functions to load data and labels.
+The DataBlock then gives you PyTorch `DataLoader`s that load data fast in parallel to feed the GPU so that it's always processing.
+
+From there, the library has different "learners" for different tasks.
+For example, there's a vision learner for image classification, a "UNet"-learner for segmentation, and a tabular learner for tabular learning.
+
+A learner combines the data you specify and a model from the library (i.e. ResNet for vision).
+Most of the time the model has pre-trained weights.
+Tabular learning models don't usually come pre-trained though since transfer learning is apparently not as useful yet for this domain.
+
+He also showed a cool example of multiple dispatch where no matter what was inside a `DataBlock` the method to show samples of the data would always return the right thing (i.e. image previews vs. rows of a table vs. segmentation masks).
+I'm still not clear on what multiple dispatch is, but if I ever dive deeper into it I should come back to these examples.
 
 # 20230128
 
