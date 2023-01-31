@@ -1,3 +1,19 @@
+# 20230130
+Even running part 2 overnight didn't work.
+Busting out the profiler.
+Had to set Linux up to allow running perf without `sudo`. 
+```
+sudo sh -c 'echo 1 > /proc/sys/kernel/perf_event_paranoid'
+sudo sh -c 'echo 0 > /proc/sys/kernel/kptr_restrict'
+```
+
+Finally got it.
+Got the solution on a walk that we don't need to check all the possible squares, instead we only need to check grid cells just outside the circles.
+This reduces our search space to about 0.1% of the cells.
+
+# 20230129
+Did day 15 part 1.
+
 # 20230128
 
 ## Advent of Code 2022 Day 13 - Falling Sand ~~Game~~
