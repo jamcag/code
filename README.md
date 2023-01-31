@@ -7,12 +7,26 @@ sudo sh -c 'echo 1 > /proc/sys/kernel/perf_event_paranoid'
 sudo sh -c 'echo 0 > /proc/sys/kernel/kptr_restrict'
 ```
 
-Finally got it.
+Also did some timing for the first time.
+For future reference:
+- `#include <chrono>`
+- `std::chrono::high_resolution_clock::now()` to measure time points
+- Cast the difference between time points to a double to get the time delta in seconds
+
+**Update:** Finally got it.
 Got the solution on a walk that we don't need to check all the possible squares, instead we only need to check grid cells just outside the circles.
 This reduces our search space to about 0.1% of the cells.
 
 # 20230129
 Did day 15 part 1.
+
+Turns out `std::find(container.begin(), container.end(), elem)` is not equivalent to `container.find(elem)`.
+The former is always a linear search while the latter exploits the internal data structures.
+This is a major surprise since I think a lot of my solutions do it the slow way.
+My falling sand solution taking just under 5 minutes also uses the slow way, switching from `vector` to `set` to `unordered_set` made no difference since I was always using `std::find`.
+
+Also, emplacing into a `vector` made my code a lot faster than when I was putting it into a `set`.
+My solution was not finishing under 5 minutes when I was using a set but did just fine with a vector.
 
 # 20230128
 
