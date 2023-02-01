@@ -27,6 +27,9 @@ This reduces our search space to about 0.1% of the cells.
 ## Advent of Code 2022 - Sensors and Beacons
 Did day 15 part 1.
 
+The parsing is really ugly.
+I tried to do it with regex first which would have been better but I could not get capture groups to work right.
+
 Turns out `std::find(container.begin(), container.end(), elem)` is not equivalent to `container.find(elem)`.
 The former is always a linear search while the latter exploits the internal data structures.
 This is a major surprise since I think a lot of my solutions do it the slow way.
