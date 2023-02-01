@@ -1,4 +1,16 @@
 # 20230131
+## Advent of Code - Opening Valves
+Pretty sweaty with the day 16 problem.
+It's looking like dynamic programming so the panic set in pretty quick.
+Tried thinking of it like a decision process to solve with reward maximization but I'm not clear on how to solve that either.
+
+Wrote an ugly input reader as per usual with these.
+
+Then tried to see how a greedy approach would fare.
+I go to the best reward-over-time valve and open it at each time step.
+This way of modelling it does not account for how going to the *best* reward at the time affects how much further it puts me from further away rewards.
+
+Exhaustive search will probably not do very well since with a time horizon of 30 steps, I'll have a large number of states to search through.
 ## USB Transfer Speeds
 Collecting some stats on transfer speeds I'm seeing on my USB drive.
 Noticing about 130 MiB/s when it's connected by USB 3.1 Gen 1 port on my laptop, and about 15 MiB/s to the USB 2.0 port on my desktop.
