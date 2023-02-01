@@ -1,3 +1,8 @@
+# 20230131
+## USB Transfer Speeds
+Collecting some stats on transfer speeds I'm seeing on my USB drive.
+Noticing about 130 MiB/s when it's connected by USB 3.0 to my laptop, and about 15 MiB/s to the USB 2.0 port on my desktop.
+
 # 20230130
 Even running part 2 overnight didn't work.
 Busting out the profiler.
