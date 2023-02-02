@@ -7,7 +7,7 @@ Searching through the ~2^30 states might be fast enough?
 Maybe I should just try it.
 
 ## MIT Algorithms 2020 - Lecture 15: Dynamic Programming
-Watched Erik Demaine's lecture on Dynamic Programming.
+Watched Erik Demaine's [lecture](https://www.youtube.com/watch?v=r4-cftqTcdI) ([notes](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_lec15/)) on Dynamic Programming.
 It's probably the best introduction I've seen since they make it very systematic with their SRTBOT mnemonic.
 They apply it to Fibonacci, DAG single-source shortest paths, and a toy bowling problem.
 
