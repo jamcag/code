@@ -1,3 +1,19 @@
+# 20230201
+## Advent of Code - Opening Valves Small Example
+Didn't make much progress on this but did come up with a minimal example with 4 nodes over 7 time steps that my greedy algorithm fails on.
+Still have a feeling it's some form of dynamic programming to solve which I don't understand.
+
+Searching through the ~2^30 states might be fast enough?
+Maybe I should just try it.
+
+## MIT Algorithms 2020 - Lecture 15: Dynamic Programming
+Watched Erik Demaine's lecture on Dynamic Programming.
+It's probably the best introduction I've seen since they make it very systematic with their SRTBOT mnemonic.
+They apply it to Fibonacci, DAG single-source shortest paths, and a toy bowling problem.
+
+I think the main gem was for sequence inputs the main subproblems to try to decompose to are suffixes, prefixes, and substrings.
+They have another three lectures just on dynamic programming alone which might be worth going through.
+
 # 20230131
 ## Advent of Code - Opening Valves
 Pretty sweaty with the day 16 problem.
