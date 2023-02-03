@@ -1,3 +1,15 @@
+# 20230202
+## Advent of Code - Openign Small Valves
+I think I came up with the solution method, to keep the search graph smaller we compress the graph and replace runs of zero-rate valves with weighted edges.
+This way, we only make a decision (and add a new node to our search tree) at the beginning node "AA" and at nodes that have non-zero rate.
+The tree is also bounded by length.
+
+Started implementing this but there's a lot of pieces so I didn't manage to finish.
+
+## `mkcmk` - CMakeLists.txt Generator
+I often find myself wanting to open m solutions in CLion which wants a CMake project so I made a simple generator.
+C++ is definitely not the *nicest* language for this, but given that buildozer and a bunch of other string processing tools are written in Go, I think it will be instructive to try and do it in C++.
+
 # 20230201
 ## Advent of Code - Opening Valves Small Example
 Didn't make much progress on this but did come up with a minimal example with 4 nodes over 7 time steps that my greedy algorithm fails on.
