@@ -1,5 +1,5 @@
 # 20230202
-## Advent of Code - Openign Small Valves
+## Advent of Code - Opening Small Valves
 I think I came up with the solution method, to keep the search graph smaller we compress the graph and replace runs of zero-rate valves with weighted edges.
 This way, we only make a decision (and add a new node to our search tree) at the beginning node "AA" and at nodes that have non-zero rate.
 The tree is also bounded by length.
