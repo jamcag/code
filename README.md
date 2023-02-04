@@ -10,6 +10,10 @@ To keep the GitHub language stats accurate, I'll put the dependencies into a `li
 lib/ linguist-vendored
 ```
 
+## Idea: Utility Header
+I find myself writing a lot of `std::cout << "var=" << var;` statements and it would be nice to put this into a function I could just call.
+
+
 # 20230202
 ## Advent of Code - Opening Small Valves
 I think I came up with the solution method, to keep the search graph smaller we compress the graph and replace runs of zero-rate valves with weighted edges.
