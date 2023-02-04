@@ -1,3 +1,15 @@
+# 20230203
+## Advent of Code - Pathfinding for Valve Opening
+Wrote the pathfinder to calculate costs to open closed valves for a given state.
+Just need to tie the main loop together from here.
+
+## Handling Third Party C++ Dependencies
+Because of how slow `FetchContent` is and how submodules take a while to initialize, I'm going to be checking in my dependencies for C++ projects.
+To keep the GitHub language stats accurate, I'll put the dependencies into a `lib/` directory and in `.gitattributes` I'll put
+```
+lib/ linguist-vendored
+```
+
 # 20230202
 ## Advent of Code - Opening Small Valves
 I think I came up with the solution method, to keep the search graph smaller we compress the graph and replace runs of zero-rate valves with weighted edges.
