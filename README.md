@@ -56,12 +56,14 @@ Then, writing the Graphviz export was really helpful with unblocking and finding
   - This would be easier to do if I followed through with writing a debug utility function
   - Main concern with deleting existing logging code is that it's tedious to re-add it again.
   - This could probably be solved with version control but in my experience doing very small checkpoints like this is still pretty high effort to restore past checkpoints compared to just re-typing the logging
+- Visualize when appropriate
+  - Example: A log for a single graph node expansion is starting to span at least 20 lines, or the overall log for a problem exceeds 10k lines.
 - Think of ways to actively unblock myself faster
 
 
 ### Valve Opening Part 2
 Part 2 of this problem involves adding another agent which might be able to do things.
-I decided to 
+I decided to not finish it today since doing the first part was exhausting.
 
 # 20230203
 ## Advent of Code - Pathfinding for Valve Opening
