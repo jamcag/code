@@ -1,3 +1,68 @@
+# 20230205
+## `mk`
+Wrote a small C++ program to compile programs with `-std=c++20` by default.
+
+My workflow is usually doing `make <target>` but this by default uses the default C++ standard of the installed GCC.
+
+Fixes a very minor annoyance with about five minutes of coding.
+Would have been 5 seconds in Python but C++ everything.
+
+## Advent of Code - Multiagent Valve Opening
+Came up with a rough sketch of how to solve AoC '22 Day 16 Part 2.
+Started pretty late and feeling like I'll write a lot of bugs if I try to implement it now.
+Cop out?
+Probably.
+
+# 20230204
+**Note** This is a laterblog.
+
+## Advent of Code - Finished Valve Opening
+Finally finished this one.
+Main problem was that I was using the wrong data structure for BFS so my shortest paths were wrong.
+Noticed this when I generated Graphviz visualizations of my graphs and saw non-symmetric edge weights.
+
+### BFS Data Structure
+BFS uses queues.
+I used to have an Anki card for this but I stopped using spaced repetition.
+Intuitively, with BFS we want to expand earlier expanded nodes before later expanded nodes so a queue makes sense.
+
+Mnemonically, **B** comes before **D** and **Q** comes before **S** so **B**FS:**Q**ueue :: **D**FS:**S**tack.
+
+### Future Improvements
+Overall unhappy with the code and my approach.
+
+There's a weird mix of trying to cache results for path finding and using those results in a depth-first search.
+I don't think the outer depth-first search loop even works.
+The main point of doing DFS in the outer loop was to limit memory use though since I was worried about running out back before I tried compressing the search down to just positive-rate valves.
+
+The graph size ultimately didn't matter so doing the outer loop with BFS worked just fine.
+
+Problem-solving wise, I approached this problem horrendously.
+I first implemented a greedy-algorithm I was almost certain wouldn't work.
+Then I built up dynamic programming in my head as the solution with no good justification then went down a rabbit hole of pre-reading a bunch of resources on dynamic programming.
+Then I came back to the problem, and decided I could reduce the search size but didn't get to coding it for a while.
+
+I spent a day implementing (broken) shortest paths.
+Then not getting the right answer, I procrastinated the next day on debugging.
+
+Being more selective in what I was printing out was a good reset when reading massive logs felt hopeless.
+Then, writing the Graphviz export was really helpful with unblocking and finding the root cause.
+
+**Actions**
+- Practice identifying when dynamic programming is good for a problem.
+- Think about ways to reduce search graphs early on 
+  - This was also pretty important for finding the needle in the haystack back in the L1-norm sensors and beacons problem
+- Delete log statements that are no longer needed
+  - This would be easier to do if I followed through with writing a debug utility function
+  - Main concern with deleting existing logging code is that it's tedious to re-add it again.
+  - This could probably be solved with version control but in my experience doing very small checkpoints like this is still pretty high effort to restore past checkpoints compared to just re-typing the logging
+- Think of ways to actively unblock myself faster
+
+
+### Valve Opening Part 2
+Part 2 of this problem involves adding another agent which might be able to do things.
+I decided to 
+
 # 20230203
 ## Advent of Code - Pathfinding for Valve Opening
 Wrote the pathfinder to calculate costs to open closed valves for a given state.
