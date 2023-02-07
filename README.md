@@ -1,3 +1,6 @@
+# 20230206
+Only did the case analysis for multiagent valve opening today.
+
 # 20230205
 ## `mk`
 Wrote a small C++ program to compile programs with `-std=c++20` by default.
