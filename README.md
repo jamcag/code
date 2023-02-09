@@ -1,4 +1,5 @@
 # 20230208
+## Advent of Code - Multiagent Valve Opening Pause
 Officially giving up on the multi-agent valve opening problem.
 I know a path forward but it involves a lot of copy and paste.
 Would be interesting to return to this one and see if I can think of a better way to write it.
@@ -7,6 +8,10 @@ In essence it's a graph search problem which shouldn't be that hard.
 Writing out the states to handle two agents is pretty tedious though to handle all of the edge cases.
 
 My furthest attempt was in [this Jupyter notebook](https://github.com/jamcag/aoc22/blob/c3a9321a6ae93912c45665afe4235e5c3f5c7406/16_py/Multi-Agent.ipynb) where I started to work through the cases.
+
+## Fastbook Chapter 1
+Read through Chapter 1 of Fastbook.
+The material was pretty much the same as lecture 1 so didn't learn anything new.
 
 # 20230207
 Trying to modify my single-agent valve opening code to handle multi-agent became a bit hairy so I decided to re-write in Python.
