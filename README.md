@@ -18,6 +18,9 @@ I trained an orange tabby vs. ragdoll cat breed classifier.
 
 Gross.
 
+The original bird/not-bird classifier got close to 100% accuracy after three epochs but I was seeing 64% accuracy.
+Another two epochs brought this down to 90% where it stayed that way.
+
 # 20230207
 Trying to modify my single-agent valve opening code to handle multi-agent became a bit hairy so I decided to re-write in Python.
 The Python re-write isn't finished though.
