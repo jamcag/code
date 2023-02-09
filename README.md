@@ -6,6 +6,8 @@ Would be interesting to return to this one and see if I can think of a better wa
 In essence it's a graph search problem which shouldn't be that hard.
 Writing out the states to handle two agents is pretty tedious though to handle all of the edge cases.
 
+My furthest attempt was in [this Jupyter notebook](https://github.com/jamcag/aoc22/blob/c3a9321a6ae93912c45665afe4235e5c3f5c7406/16_py/Multi-Agent.ipynb) where I started to work through the cases.
+
 # 20230207
 Trying to modify my single-agent valve opening code to handle multi-agent became a bit hairy so I decided to re-write in Python.
 The Python re-write isn't finished though.
