@@ -1,3 +1,11 @@
+# 20230208
+Officially giving up on the multi-agent valve opening problem.
+I know a path forward but it involves a lot of copy and paste.
+Would be interesting to return to this one and see if I can think of a better way to write it.
+
+In essence it's a graph search problem which shouldn't be that hard.
+Writing out the states to handle two agents is pretty tedious though to handle all of the edge cases.
+
 # 20230207
 Trying to modify my single-agent valve opening code to handle multi-agent became a bit hairy so I decided to re-write in Python.
 The Python re-write isn't finished though.
