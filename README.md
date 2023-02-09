@@ -1,3 +1,7 @@
+# 20230207
+Trying to modify my single-agent valve opening code to handle multi-agent became a bit hairy so I decided to re-write in Python.
+The Python re-write isn't finished though.
+
 # 20230206
 Only did the case analysis for multiagent valve opening today.
 
@@ -15,6 +19,10 @@ Came up with a rough sketch of how to solve AoC '22 Day 16 Part 2.
 Started pretty late and feeling like I'll write a lot of bugs if I try to implement it now.
 Cop out?
 Probably.
+
+## CPP Syntax 2
+Watched Herb Sutter's talk on Syntax 2.
+Pretty thought-provoking and would be nice if the language evolved that way but I'm not going to go out and learn an experimental language.
 
 # 20230204
 **Note** This is a laterblog.
