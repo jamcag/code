@@ -130,6 +130,10 @@ Collecting some stats on transfer speeds I'm seeing on my USB drive.
 Noticing about 130 MiB/s when it's connected by USB 3.1 Gen 1 port on my laptop, and about 15 MiB/s to the USB 2.0 port on my desktop.
 The drive is rated for 150 MiB/s so there's a gap there.
 
+## Algorithm Design Manual - Dynamic Programming Fibonacci
+I read some pages of Skiena's Algorithm Design Manual.
+Their description of dynamic programming isn't super intuitive but they do say that once you understand it, that it becomes one of the easiest to implement.
+
 # 20230130
 Even running part 2 overnight didn't work.
 Busting out the profiler.
