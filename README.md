@@ -13,6 +13,11 @@ My furthest attempt was in [this Jupyter notebook](https://github.com/jamcag/aoc
 Read through Chapter 1 of Fastbook.
 The material was pretty much the same as lecture 1 so didn't learn anything new.
 
+# Deep Learning for Coders Homework 1
+I trained an orange tabby vs. ragdoll cat breed classifier.
+
+Gross.
+
 # 20230207
 Trying to modify my single-agent valve opening code to handle multi-agent became a bit hairy so I decided to re-write in Python.
 The Python re-write isn't finished though.
