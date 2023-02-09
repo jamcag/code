@@ -131,8 +131,9 @@ Noticing about 130 MiB/s when it's connected by USB 3.1 Gen 1 port on my laptop,
 The drive is rated for 150 MiB/s so there's a gap there.
 
 ## Algorithm Design Manual - Dynamic Programming Fibonacci
-I read some pages of Skiena's Algorithm Design Manual.
+I read some pages of Skiena's Algorithm Design Manual Chapter 8 which covers dynamic programming.
 Their description of dynamic programming isn't super intuitive but they do say that once you understand it, that it becomes one of the easiest to implement.
+I read the chapter up to "8.1.3 Fibonacci Numbers by Dynamic Programming".
 
 # 20230130
 Even running part 2 overnight didn't work.
