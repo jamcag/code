@@ -12,7 +12,7 @@ Will need to be smarter for part 2 since it has a massive number of shapes.
 Store the border of my shape I guess?
 I can't just store the heights since a piece could move horizontally into a gap in the middle.
 
-## `pixel_preview`
+## [`pixel_preview`](https://github.com/jamcag/pixel_preview/blob/main/Pixel%20Preview.ipynb) - Pixel Visualizer
 Wrote the visualizer real quick using [JupyterLite Retro](https://jupyterlite.readthedocs.io/en/latest/_static/retro/tree/).
 It's pretty nice to just whip a quick visualization up especially when logging Python-parsable output from C++.
 
