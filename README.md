@@ -1,3 +1,21 @@
+# 20230209
+## Advent of Code 2022 - Tetris
+Did part 1 of day 17.
+Was stuck for a while until I wrote a simple visualizer.
+I relented and just did the visualization in Python ([pixel_preview](https://github.com/jamcag/pixel_preview/blob/main/Pixel%20Preview.ipynb)).
+I tried making a PPM version but the image generated was too small, I didn't have a PPM viewer installed and the online one I tried had bad zooming capabilities.
+
+Have some ugly copypasta in my solution.
+Could easily refactor that into a function.
+
+Will need to be smarter for part 2 since it has a massive number of shapes.
+Store the border of my shape I guess?
+I can't just store the heights since a piece could move horizontally into a gap in the middle.
+
+## `pixel_preview`
+Wrote the visualizer real quick using [JupyterLite Retro](https://jupyterlite.readthedocs.io/en/latest/_static/retro/tree/).
+It's pretty nice to just whip a quick visualization up especially when logging Python-parsable output from C++.
+
 # 20230208
 ## Advent of Code - Multiagent Valve Opening Pause
 Officially giving up on the multi-agent valve opening problem.
