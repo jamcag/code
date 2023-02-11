@@ -1,3 +1,31 @@
+# 20230210
+## Advent of Code 2022 - Voxel Surface Area
+Did part 1 super quick.
+Then got stumped by part 2.
+Brainstormed some ideas, none of which I think were great
+- Flood fill the air pockets and count as normal
+  - Pro: Simple
+  - Con: No way to know if we're flood filling the exterior or an air pocket (at least not off the top of my head)
+  - Con: Makes our problem real dense and makes us count a lot of voxels.
+- Do a connected components and find the surface areas of each by tracing a ray across every pixel on every face of the bounding cube. (I swear this makes more sense in my head than it does written)
+  - Pro: I think it should work and be pretty quick?
+  - Con: Coding the intersection checking seems hard.
+
+Fatigue was setting so didn't end up going through with this one.
+
+Might be easier to prototype this through the 2D case first? I think the 1D case is too trivial (and possibly poorly defined since the concept of interior and exterior in 1D are ambiguous).
+
+Put some of my progress onto the [d18p2](https://github.com/jamcag/aoc22/tree/d18p2) branch.
+
+## Ray Tracing in One Weekend
+Decided to pick this up.
+I've stumbled upon it before and have had false starts going through it.
+This time, I'm just going through the code and skimming the prose.
+At the end, they give some challenge extensions that I think will be super educational to do.
+There should be a couple that have solutions to them too that I can compare against.
+
+Made it to Listing 50 in coding and pushed my copy to [jamcag/rtweekend](https://github.com/jamcag/rtweekend).
+
 # 20230209
 ## Advent of Code 2022 - Tetris
 Did part 1 of day 17.
