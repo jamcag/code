@@ -1,3 +1,7 @@
+# 20230211
+Was out most of the day.
+Managed to get to the next image in Ray Tracing in One Weekend but didn't read further into Advent of Code.
+
 # 20230210
 ## Advent of Code 2022 - Voxel Surface Area
 Did part 1 super quick.
