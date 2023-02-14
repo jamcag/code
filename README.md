@@ -1,3 +1,19 @@
+# 20230212
+Only read today, got a hang of the Jupyter architecture by reading a pretty nifty architecture doc.
+
+Tried to make a client for Jupyter last year but got stuck in the weeds with all the moving parts.
+
+Main takeaway is that there are three main components:
+- The client
+- The server
+- The kernel
+
+The server and kernel communicate with 0MQ while the client and server communicate with HTTP/WebSockets.
+Seems like I didn't know what I was doing last time since I thought I would need 0MQ for the client.
+I guess if I self-hosted the kernel, then I might have needed it?
+
+Not sure, am still tentatively interested in writing a client but unclear how it fits into my priorities and overall goals.
+
 # 20230211
 Was out most of the day.
 Managed to get to the next image in Ray Tracing in One Weekend but didn't read further into Advent of Code.
