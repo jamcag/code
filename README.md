@@ -1,3 +1,14 @@
+# 20230213
+Another reading-only day.
+Pretty scattered reading going through Lospinoso's C++ Book and some Hacker News.
+Nothing too deep or memorable.
+
+I think I will probably just stick to the hard deadlines for Advent of Code of doing one per day.
+Missed days are missed days.
+The dragging on for this has been demoralizing.
+
+Either we solve them or we move on the other problem sets.
+
 # 20230212
 Only read today, got a hang of the Jupyter architecture by reading a pretty nifty architecture doc.
 
