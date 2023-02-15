@@ -1,3 +1,30 @@
+# 20230214
+## Advent of Code 2022 - Day 20 Fail
+Caught up with a lot of BS working on AoC'22 Day 20.
+Was jumping around between solution methods a bunch.
+Did a lot of false starts from a blank file.
+Initially was just gonna do it top-to-bottom in main.
+Then thought of implementing some `left` and `right` functions to do the shuffling.
+Finally, was gonna do a class to implement it.
+
+Overall, just didn't make any meaningful progress.
+
+## Setting Up Global Catch2
+In the process, I did some yak-shaving trying to get my environment set up like CoderPad so I could just plop some quick unit tests into any C++ file.
+I primarily was interested in being able to stick
+```cpp
+#define CATCH_CONFIG_MAIN
+#include "catch.hpp"
+```
+at the top of any cpp file and have it work but something happened with Catch2 that made it really slow to compile.
+
+With a normal main function it takes 0.5 s while with Catch2 v2.13.10's main, it takes 9 seconds!
+Horrible.
+
+I guess I could use Catch2 v3 but that means adding a `-l` to my compilation flags everytime I want to use it which is a slight annoyance.
+
+**SysAdmin Note:** For future reference, I just stuck the `catch.hpp` header into `/usr/local/include` and GCC was automatically able to pick it up without extra environment variable mucking.
+
 # 20230213
 Another reading-only day.
 Pretty scattered reading going through Lospinoso's C++ Book and some Hacker News.
