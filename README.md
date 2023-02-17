@@ -12,6 +12,10 @@ Neat how he spends about an hour doing manual chain rule just to cover two examp
 Reminds me of a university tutorial.
 
 Didn't end up getting to solving the part 2 problem but I think it should work.
+
+Also didn't finish the video, I had 20 minutes left but got tired.
+Watching material like this is exhausting in a good way.
+
 # 20230214
 ## Advent of Code 2022 - Day 20 Fail
 Caught up with a lot of BS working on AoC'22 Day 20.
