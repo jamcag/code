@@ -1,3 +1,17 @@
+# 20230215
+## Advent of Code 22 - Calculator
+Did part 1 of AoC '22 Day 21.
+Pretty simple.
+
+Then tried to get clever and do part 2 using gradient descent.
+
+## Micrograd
+Watched the video on micrograd.
+It's pretty informative.
+Neat how he spends about an hour doing manual chain rule just to cover two examples.
+Reminds me of a university tutorial.
+
+Didn't end up getting to solving the part 2 problem but I think it should work.
 # 20230214
 ## Advent of Code 2022 - Day 20 Fail
 Caught up with a lot of BS working on AoC'22 Day 20.
