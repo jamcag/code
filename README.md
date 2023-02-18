@@ -1,3 +1,17 @@
+# 20230217
+Didn't get around to coding today.
+Was pretty low energy all day.
+
+Read a bit about why GUIs are hard in Rust.
+Turns out it has no inheritance.
+Wild.
+
+# 20230216
+Managed to pass the public test case for Day 22 but couldn't get the answer.
+
+Wrote a visualizer [gridviz](https://github.com/jamcag/gridviz) to try and debug but ran out of time.
+
+Watched a talk about ChatGPT, main parts are autoregressive learning and reinforcement learning from human feedback.
 # 20230215
 ## Advent of Code 22 - Calculator
 Did part 1 of AoC '22 Day 21.
