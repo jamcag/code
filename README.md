@@ -1,3 +1,11 @@
+# 20230218
+Finished the Ray Tracing in One Weekend book.
+Pretty cool approaches to splitting up rendering code and data representation.
+Every shape is a hittable with some material.
+The material defines what happens when a ray hits it.
+The render time is proportional to the size of the image and the number of objects in the image.
+A lot of the math comes from physics with some cool approximations.
+
 # 20230217
 Didn't get around to coding today.
 Was pretty low energy all day.
