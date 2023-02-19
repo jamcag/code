@@ -1,4 +1,5 @@
 # 20230218
+## Ray Tracing in One Weekend
 Finished the Ray Tracing in One Weekend book.
 Pretty cool approaches to splitting up rendering code and data representation.
 Every shape is a hittable with some material.
@@ -6,7 +7,7 @@ The material defines what happens when a ray hits it.
 The render time is proportional to the size of the image and the number of objects in the image.
 A lot of the math comes from physics with some cool approximations.
 
-## C++ Programming and Principles
+## Programming: Principles and Practice in C++
 ### Chapter 1
 Started reading this classic.
 Was apprehensive before since it only covered up to C++14 but it should probably still hold up well.
@@ -25,6 +26,9 @@ Not much else interesting.
 
 ### Chapter 3
 I read up to "3.4 Operations and operators", if I pick it up again it will be from "3.5 Assignment and initialization".
+
+## Advent of Code '22 - Day 24
+Read the description but didn't feel like I knew a solution right away so decided to skip.
 
 # 20230217
 Didn't get around to coding today.
