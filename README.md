@@ -6,7 +6,8 @@ The material defines what happens when a ray hits it.
 The render time is proportional to the size of the image and the number of objects in the image.
 A lot of the math comes from physics with some cool approximations.
 
-## C++ Programming and Principles Chapter 1
+## C++ Programming and Principles
+### Chapter 1
 Started reading this classic.
 Was apprehensive before since it only covered up to C++14 but it should probably still hold up well.
 
@@ -17,6 +18,13 @@ Intuitively this makes sense since shipping stuff in North America is pretty exp
 Also interstingly, the phone system has five 9's of reliability (20 minutes of downtime in 20 years).
 
 Read that chapter up to "1.5.3 Telecommunications", if I pick it up again it will be from "1.5.4 Medicine".
+
+### Chapter 2
+Pretty basic "Hello, World!" example.
+Not much else interesting.
+
+### Chapter 3
+I read up to "3.4 Operations and operators", if I pick it up again it will be from "3.5 Assignment and initialization".
 
 # 20230217
 Didn't get around to coding today.
