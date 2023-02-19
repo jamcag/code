@@ -8,10 +8,10 @@ The render time is proportional to the size of the image and the number of objec
 A lot of the math comes from physics with some cool approximations.
 
 ## Programming: Principles and Practice in C++
-### Chapter 1
 Started reading this classic.
-Was apprehensive before since it only covered up to C++14 but it should probably still hold up well.
+Was apprehensive before since it only covered up to C++14 but it should hold up well since C++{17, 20, 23} aren't as revolutionary as C++11 was.
 
+### Chapter 1
 The first chapter is a motivating chapter on programming which has a couple of gems.
 Sea transport is amazingly cheaper than land transport.
 Intuitively this makes sense since shipping stuff in North America is pretty expensive but it hits different to read it stated so matter-of-fact.
