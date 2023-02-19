@@ -10,13 +10,14 @@ A lot of the math comes from physics with some cool approximations.
 ## Programming: Principles and Practice in C++
 Started reading this classic.
 Was apprehensive before since it only covered up to C++14 but it should hold up well since C++{17, 20, 23} aren't as revolutionary as C++11 was.
+Putting my code from this book in [jamcag/ppap-cpp](https://github.com/jamcag/ppap-cpp).
 
 ### Chapter 1
 The first chapter is a motivating chapter on programming which has a couple of gems.
 Sea transport is amazingly cheaper than land transport.
 Intuitively this makes sense since shipping stuff in North America is pretty expensive but it hits different to read it stated so matter-of-fact.
 
-Also interstingly, the phone system has five 9's of reliability (20 minutes of downtime in 20 years).
+Also interestingly, the phone system has five 9's of reliability (20 minutes of downtime in 20 years).
 
 Read that chapter up to "1.5.3 Telecommunications", if I pick it up again it will be from "1.5.4 Medicine".
 
