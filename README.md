@@ -1,3 +1,14 @@
+# 20230219
+Watched Lecture 2 of the fastai videos.
+Pretty cool deployment stuff.
+Save a model as a pickle.
+Use HuggingFace Spaces and Gradio to serve a model.
+Git-based workflow to deploy.
+Gradio doesn't support tensors or numpy arrays so need to convert first.
+Streamlit more customizable.
+
+HuggingFace Spaces automatically hosts your Gradio app as a JSON-HTTP API too so can integrate quick with any frontend once deployed.
+
 # 20230218
 ## Ray Tracing in One Weekend
 Finished the Ray Tracing in One Weekend book.
