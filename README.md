@@ -1,3 +1,19 @@
+# 20230220
+Trying to do the deployment exercise and it seems like the fastai `predict` API for classification has changed.
+
+The last time I ran things on Feb 9, I was able to pass a `PILImage` into `predict` but now it gives an error about a missing `read` attribute.
+This made me suspect it wanted a file name instead and passing in the file name instead worked.
+
+This no longer works
+```py
+learner.predict(PILImage("image.jpg"))
+```
+
+Instead you need to do
+```py
+learner.predict("image.jpg")
+```
+
 # 20230219
 Watched Lecture 2 of the fastai videos.
 Pretty cool deployment stuff.
