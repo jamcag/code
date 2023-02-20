@@ -9,6 +9,10 @@ Streamlit more customizable.
 
 HuggingFace Spaces automatically hosts your Gradio app as a JSON-HTTP API too so can integrate quick with any frontend once deployed.
 
+**Aside:** Also learned a cool thing about GPU memory.
+Unlike regular memory, GPU memory doesn't swap and instead crashes with out-of-memory instead.
+I've seen it before but never heard it said before.
+
 # 20230218
 ## Ray Tracing in One Weekend
 Finished the Ray Tracing in One Weekend book.
