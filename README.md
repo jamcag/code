@@ -14,6 +14,21 @@ Instead you need to do
 learner.predict("image.jpg")
 ```
 
+## Educative - C++ Fundamentals for Professionals
+Looking at this class and it needs some heavy proofreading since I'm finding an issue in every section so far.
+It's covering some topics I haven't run into before as well as forcing me to critically read every example because of how many errors it has.
+
+Some highlights
+- A lot of the algorithms in the `<functional>` header in the STL work in-place (at least the ones they show in the intro like `accumulate`, `remove_if` and `transform`)
+- `std::remove_if` returns a past-the-end iterator for the filtered sequence
+  - it modifies the sequence in place putting everything removed after the returned iterator
+  - I thought it would just remove elements
+    - The way it does things has the benefit of not modifying the size of the sequence.
+    - It's pretty non-obvious though.
+- The way to implement a user-defined literal is with `operator""_<suffix>`
+  - Example: a metre `_m` suffix on double would be `Distance operator""_m(double d)`
+  - Example: kilometre `_km` suffix on double would be `Distance operator""_km(double d)`
+
 # 20230219
 Watched Lecture 2 of the fastai videos.
 Pretty cool deployment stuff.
