@@ -1,3 +1,7 @@
+# 20230222
+The random walk continues and did some Kotlin today.
+Read Kotlin in Action up to "2.1.2 Functions", pick up from "2.1.3 Variables" next.
+
 # 20230221
 Did a sidebar into Qt today and made a counter app from the 7GUIs benchmark.
 Putting benchmark implementations into [jamcag/7guis-qt6](github.com/jamcag/7guis-qt6).
