@@ -1,3 +1,7 @@
+# 20230221
+Did a sidebar into Qt today and made a counter app from the 7GUIs benchmark.
+Putting benchmark implementations into [jamcag/7guis-qt6](github.com/jamcag/7guis-qt6).
+
 # 20230220
 Trying to do the deployment exercise and it seems like the fastai `predict` API for classification has changed.
 
@@ -23,11 +27,20 @@ Some highlights
 - `std::remove_if` returns a past-the-end iterator for the filtered sequence
   - it modifies the sequence in place putting everything removed after the returned iterator
   - I thought it would just remove elements
-    - The way it does things has the benefit of not modifying the size of the sequence.
-    - It's pretty non-obvious though.
+    - The way it does things has the benefit of not modifying the size of the sequence
+    - It's pretty non-obvious though
 - The way to implement a user-defined literal is with `operator""_<suffix>`
   - Example: a metre `_m` suffix on double would be `Distance operator""_m(double d)`
   - Example: kilometre `_km` suffix on double would be `Distance operator""_km(double d)`
+- `bool` can be initialized to `nullptr` for some reason
+- The syntax for pointers to members is incredibly ugly
+  - For a class like `struct A { int x; };`
+  - You can make a pointer to member like `int A:: * p = &A::x;`
+  - Example usage: `A a{3}; std::cout << a.*p << std::endl;` prints 3
+  - We thankfully can just use `auto` and do `auto p = &A::x`
+- The website [cppinsights.io](cppinsights.io) is a cool tool for desugaring (among other things) the deduced type from `auto`
+- To make a `std::string` with `auto` you can use the C++ string literal suffix from `std::string_literals::s`
+  - Ex: `"Some string"s`
 
 # 20230219
 Watched Lecture 2 of the fastai videos.
