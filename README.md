@@ -4,6 +4,13 @@ Read Kotlin in Action up to "2.1.2 Functions", pick up from "2.1.3 Variables" ne
 
 Also picked up Stroustup 2014 again reading "3.5 Assignment and initialization", continue from "3.6 Composite assignment operators".
 
+Messed around with QFormLayout.
+Trying to find a fast way to insert a new executable into a CMake project.
+CLion's new file dialogs aren't great since they mostly assume you're creating new C++ files and adding them to existing targets as opposed to creating a new target.
+Its C++ scratch file is pretty good since it can automatically run scratch files with minimal fuss.
+Downside is that you can't rename the scratches and for some reason it uses `g++` on Windows so my setup with `std_lib_facilities.h` doesn't work.
+While a quick Qt app would work okay, it would ideally be integrated in all the ways I work with C++ so: terminal, VSCode, and CLion.
+
 # 20230221
 Did a sidebar into Qt today and made a counter app from the 7GUIs benchmark.
 Putting benchmark implementations into [jamcag/7guis-qt6](github.com/jamcag/7guis-qt6).
