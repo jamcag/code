@@ -11,6 +11,11 @@ Its C++ scratch file is pretty good since it can automatically run scratch files
 Downside is that you can't rename the scratches and for some reason it uses `g++` on Windows so my setup with `std_lib_facilities.h` doesn't work.
 While a quick Qt app would work okay, it would ideally be integrated in all the ways I work with C++ so: terminal, VSCode, and CLion.
 
+**Update:** Tested it out in Visual Studio 2022 as well and when I try adding a new file it suggests adding it as a dependency to all executables...
+
+It makes sense why it is this way though, for a typical application there is only one executable.
+I just wish these tools had more support for multi-executable projects.
+
 # 20230221
 Did a sidebar into Qt today and made a counter app from the 7GUIs benchmark.
 Putting benchmark implementations into [jamcag/7guis-qt6](github.com/jamcag/7guis-qt6).
