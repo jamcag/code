@@ -1,3 +1,6 @@
+# 20230224
+Also no coding, let's just call it a weekend.
+
 # 20230223
 Didn't do any coding today, twas a pretty slow day life wise.
 
@@ -18,6 +21,10 @@ While a quick Qt app would work okay, it would ideally be integrated in all the 
 
 It makes sense why it is this way though, for a typical application there is only one executable.
 I just wish these tools had more support for multi-executable projects.
+
+Made a the counter app but for Android.
+There's an interesting XML/Kotlin split going on in that world.
+The tooling support is great so it isn't a big problem but would be interesting to see what a big app is like.
 
 # 20230221
 Did a sidebar into Qt today and made a counter app from the 7GUIs benchmark.
