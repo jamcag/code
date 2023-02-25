@@ -1,3 +1,6 @@
+# 20230223
+Didn't do any coding today, twas a pretty slow day life wise.
+
 # 20230222
 The random walk continues and did some Kotlin today.
 Read Kotlin in Action up to "2.1.2 Functions", pick up from "2.1.3 Variables" next.
