@@ -1,3 +1,9 @@
+# 20230227
+Did the [Majority Element](https://leetcode.com/problems/majority-element/) problem on LeetCode.
+It was graded Easy.
+Pretty bad 10th percentile run-time and 5th-percentile memory usage.
+Would be one to revisit.
+
 # 20230224
 Also no coding, let's just call it a weekend.
 
