@@ -1,3 +1,9 @@
+# 20230301
+Went through Chapters 1 to 4 of Crafting Interpreters.
+
+# 20230228
+Made the Celsius-Fahrenheit converter in Qt 6 from 7GUIs.
+
 # 20230227
 Did the [Majority Element](https://leetcode.com/problems/majority-element/) problem on LeetCode.
 It was graded Easy.
