@@ -1,3 +1,9 @@
+# 20230302
+Got my C++ version of the lox scanner working.
+Couldn't do it exactly the same way where the error reporting lives in the `Lox` class inside a static function like in Java.
+Looked at someone else's implementation and they create a separate `ErrorHandler` class and pass it around instead.
+The book suggests this as a better way anyways so not gonna get too hung up on not matching the original implementation as closely as I can.
+
 # 20230301
 Went through Chapters 1 to 4 of Crafting Interpreters.
 
