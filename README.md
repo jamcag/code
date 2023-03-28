@@ -1,3 +1,13 @@
+# 20230328
+Back on this coding grind and it seems like I've forgotten a lot from not practicing.
+
+Trying to get the first example from The Algorithm Design Manual in an executable state and in trying to create a test input array I've forgotten how to declare and initialize a C-array on the stack.
+
+My feeling is it's
+```c
+int s[] = {1, 2, 3};
+```
+
 # 20230302
 Got my C++ version of the lox scanner working.
 Couldn't do it exactly the same way where the error reporting lives in the `Lox` class inside a static function like in Java.
