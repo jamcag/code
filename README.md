@@ -8,6 +8,13 @@ My feeling is it's
 int s[] = {1, 2, 3};
 ```
 
+**Update:** That was right.
+
+On a side-note, I'm looking for a fast workflow to test out C/C++ snippets and I think CLion's Scratch Files is probably the best available option.
+
+Requirements for me are:
+- Can create a file that I can run
+
 # 20230302
 Got my C++ version of the lox scanner working.
 Couldn't do it exactly the same way where the error reporting lives in the `Lox` class inside a static function like in Java.
