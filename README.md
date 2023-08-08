@@ -10,6 +10,8 @@ The diameter either includes the current node or doesn't.
 
 We compute it bottom up.
 
+**Update** Looked at some descriptions of the solution and I'm on the right track so it's primarily a coding problem from here which should be good practice.
+
 # 20230328
 Back on this coding grind and it seems like I've forgotten a lot from not practicing.
 
