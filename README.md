@@ -1,3 +1,15 @@
+# 20230807
+## Diameter of a Tree
+Pretty stumped on this question and feel like I'm getting pretty lost in the complexity.
+My implementation after about an hour of working through it is [here](https://github.com/jamcag/diameter/blob/7b166805214a6ec4a16429e771f2613d641029b2/diameter.py).
+
+It's a bit of a mess but conceptually pretty simple.
+The diameter either includes the current node or doesn't.
+- If it does, then the diameter `max_depth(node.left) + max_depth(node.right)`
+- If it doesn't then it's one of the sub-tree diameters.
+
+We compute it bottom up.
+
 # 20230328
 Back on this coding grind and it seems like I've forgotten a lot from not practicing.
 
