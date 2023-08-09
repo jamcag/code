@@ -1,3 +1,22 @@
+# 20230809
+## Diameter of a Tree Revisited
+Created the [dead basic implementation](https://github.com/jamcag/diameter/blob/0e027877947d0a170e0e298f6c33af54ab80dbb4/slow_diameter.py) for `diameter` which is pretty clear.
+There's some obvious recomputation going on which we might be able to speed up by caching, I think the bottom-up traversal was probably the better solution than this recursive solution but it got complex real quick.
+Am only getting 10-th percentile runtime and 40-th percentile memory with this approach.
+Should re-visit as a challenge to myself for writing hairy traversal code when I am ready to review.
+
+```py
+def diameter(self):
+    if not root:
+        return 0
+    return max(diameter(root.left), diameter(root.right), max_depth(root.left) + max_depth(root.right))
+```
+
+## Python `dict` Keys Must Be Immutable
+> [...] dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys.
+
+[Source](https://docs.python.org/3/tutorial/datastructures.html#:~:text=dictionaries%20are%20indexed%20by%20keys%2C%20which%20can%20be%20any%20immutable%20type%3B%20strings%20and%20numbers%20can%20always%20be%20keys)
+
 # 20230807
 ## Diameter of a Tree
 Pretty stumped on this question and feel like I'm getting pretty lost in the complexity.
