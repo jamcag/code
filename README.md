@@ -17,6 +17,9 @@ def diameter(self):
 
 [Source](https://docs.python.org/3/tutorial/datastructures.html#:~:text=dictionaries%20are%20indexed%20by%20keys%2C%20which%20can%20be%20any%20immutable%20type%3B%20strings%20and%20numbers%20can%20always%20be%20keys)
 
+## Maximum Subarray
+There are divide-and-conquer, dynamic programming, and a shortest path reduction which can solve this but the simplest is [Kadane's algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem#Kadane's_algorithm). I tried for a couple hours on this one already but couldn't come up with it myself. I read a brief description of the algorithm and on step `j` you maintain two variables `current_sum = sum(nums[i:j])` for all `i` and `best_sum = max(nums[i:j])` for all `i` and `j`. Relating the two is not super clear to me but I'll keep working on it.
+
 # 20230807
 ## Diameter of a Tree
 Pretty stumped on this question and feel like I'm getting pretty lost in the complexity.
