@@ -1,3 +1,22 @@
+# 20230813
+## Efficient Heap Queues in Python
+The `heapq` module comes with two functions `heapreplace` and `heappushpop` to simultaneously add and remove an item from a heap.
+These are faster than two separate calls to `heappush` and `heappop`.
+
+Functionally, `heapreplace` first removes an item and then pops from the heap.
+```py
+>>> heap = [2]
+>>> heapq.heapreplace(heap, 1)
+2
+```
+
+Functionally, `heappushpop` inserts an item first and then pops from the heap.
+```py
+>>> heap = [1]
+>>> heapq.heappushpop(heap, 2)
+1
+```
+
 # 20230809
 ## Diameter of a Tree Revisited
 Created the [dead basic implementation](https://github.com/jamcag/diameter/blob/0e027877947d0a170e0e298f6c33af54ab80dbb4/slow_diameter.py) for `diameter` which is pretty clear.
