@@ -2,6 +2,10 @@
 Dipping my toes into parameter pack and a wrapper to `std::tuple` is one of the simplest ways to use them.
 
 ```cpp
+#include <iostream>
+#include <tuple>
+using namespace std;
+
 template <typename... Ts>
 class Tuple {
 public:
