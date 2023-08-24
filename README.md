@@ -1,4 +1,24 @@
 # 20230824
+Dipping my toes into parameter pack and a wrapper to `std::tuple` is one of the simplest ways to use them.
+
+```cpp
+template <typename... Ts>
+class Tuple {
+public:
+  Tuple(tuple<Ts...> data) : data_(data) {}
+  Tuple(Ts... data) : data_(data...) {}
+  tuple<Ts...> data() { return data_; }
+private:
+  tuple<Ts...> data_;
+};
+
+// To execute C++, please define "int main()"
+int main() {
+  Tuple<int> t = make_tuple(3);
+  cout << get<0>(t.data()) << "\n";
+}
+```
+# 20230823
 Trying to learn some more advanced C++ starting with templates.
 
 A very basic template function is an add function that takes in two members of type `T` and returns the result.
