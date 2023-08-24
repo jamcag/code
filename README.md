@@ -1,3 +1,29 @@
+# 20230824
+Trying to learn some more advanced C++ starting with templates.
+
+A very basic template function is an add function that takes in two members of type `T` and returns the result.
+```cpp
+template <typename T>
+T add(T t1, T t2) {
+  return t1 + t2;
+}
+```
+
+You could use it like `add(1, 2)` or `add(1.0, 2.0)` but not like `add(1.0, 2)` because it expects both arguments and the return types to be the same.
+GCC 12.1.0 errors when trying to do the call this way.
+```
+solution.cpp: In function ‘int main()’:
+solution.cpp:14:14: error: no matching function for call to ‘add(double, int)’
+   14 |   cout << add(1.0, 2) << endl;
+      |           ~~~^~~~~~~~
+solution.cpp:5:3: note: candidate: ‘template<class T> T add(T, T)’
+    5 | T add(T t1, T t2) {
+      |   ^~~
+solution.cpp:5:3: note:   template argument deduction/substitution failed:
+solution.cpp:14:14: note:   deduced conflicting types for parameter ‘T’ (‘double’ and ‘int’)
+   14 |   cout << add(1.0, 2) << endl;
+      |           ~~~^~~~~~~~
+```
 # 20230813
 ## Efficient Heap Queues in Python
 The `heapq` module comes with two functions `heapreplace` and `heappushpop` to simultaneously add and remove an item from a heap.
