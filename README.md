@@ -12,7 +12,6 @@ private:
   tuple<Ts...> data_;
 };
 
-// To execute C++, please define "int main()"
 int main() {
   Tuple<int> t = make_tuple(3);
   cout << get<0>(t.data()) << "\n";
