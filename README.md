@@ -1,3 +1,30 @@
+# 20230825
+Learned about type traits today while trying to implement a generic vector dot product.
+```cpp
+#include <iostream>
+#include <type_traits>
+using namespace std;
+
+template <typename T>
+struct can_dot {
+  static constexpr bool value = is_arithmetic_v<T> && !is_same_v<T, char>;
+};
+
+template <typename T>
+constexpr bool can_dot_v = can_dot<T>::value;
+
+int main() {
+  cout << boolalpha;
+  cout << "can_dot_v<int>: " << can_dot_v<int> << "\n";
+  cout << "can_dot_v<double>: " << can_dot_v<double> << "\n";
+  cout << "can_dot_v<float>: " << can_dot_v<float> << "\n";
+  cout << "can_dot_v<char>: " << can_dot_v<char> << "\n";
+}
+```
+
+- `value` is static since it's a property of a type
+  - It lets you access the value without constructing an instance of an object
+- To avoid having to do `can_dot<T>::value`, we define a [variable template](https://en.cppreference.com/w/cpp/language/variable_template) `can_dot_v<T>` as a shorthand
 # 20230824
 Dipping my toes into parameter pack and a wrapper to `std::tuple` is one of the simplest ways to use them.
 
