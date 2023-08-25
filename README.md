@@ -23,7 +23,8 @@ int main() {
 ```
 
 - `value` is static since it's a property of a type
-  - It lets you access the value without constructing an instance of an object
+  - It lets you access the value without constructing an instance of an object 
+    - Without it would need `can_dot<int> trait;`, then `trait.value;` to access the result.
 - To avoid having to do `can_dot<T>::value`, we define a [variable template](https://en.cppreference.com/w/cpp/language/variable_template) `can_dot_v<T>` as a shorthand
 # 20230824
 Dipping my toes into parameter pack and a wrapper to `std::tuple` is one of the simplest ways to use them.
