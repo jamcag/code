@@ -1,3 +1,10 @@
+# 20230916
+Installed PyTorch on the laptop.
+
+```sh
+conda install pytorch::pytorch torchvision torchaudio -c pytorch
+```
+
 # 20230825
 Learned about type traits today while trying to implement a generic vector dot product.
 ```cpp
