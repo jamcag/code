@@ -1,3 +1,14 @@
+# 20231020
+
+I often find myself wanting to commit quick in cases where I know I'll rely on looking at diffs instead of messages to understand changes so I made a git alias for it.
+```
+git config --global alias.save 'commit -m "" --allow-empty-message'
+```
+
+This has the benefit of not literring your repo with a bunch of garbage commit messages like "askldjaklcxjnzkl" or "." or "fix".
+Instead you'll see no commit message.
+Wow.
+
 # 20230916
 Installed PyTorch on the laptop.
 
